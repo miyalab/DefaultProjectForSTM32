@@ -1,0 +1,17 @@
+/*
+ * MultiAccess.h
+ *
+ *  Created on: 2020/11/17
+ *      Author: miyak
+ */
+
+#ifndef SRC_MIYALAB_STM32F446RE_H_
+#define SRC_MIYALAB_STM32F446RE_H_
+
+class MultiAccess {
+public:
+	MultiAccess();
+	virtual ~MultiAccess();
+};
+
+#endif /* SRC_MIYALAB_STM32F446RE_H_ */

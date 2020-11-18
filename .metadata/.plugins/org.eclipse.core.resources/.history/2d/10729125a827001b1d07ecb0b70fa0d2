@@ -1,0 +1,18 @@
+/*
+ * MiYALABSTM32F446READC.cpp
+ *
+ *  Created on: 2020/11/16
+ *      Author: miyak
+ */
+
+#include "MiYALAB_STM32F446RE_ADC.h"
+
+MiYALAB_STM32F446RE_ADC::MiYALAB_STM32F446RE_ADC() {
+	// TODO 自動生成されたコンストラクター・スタブ
+
+}
+
+MiYALAB_STM32F446RE_ADC::~MiYALAB_STM32F446RE_ADC() {
+	// TODO Auto-generated destructor stub
+}
+

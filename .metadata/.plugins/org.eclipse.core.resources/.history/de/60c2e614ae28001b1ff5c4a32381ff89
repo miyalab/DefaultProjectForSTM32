@@ -1,0 +1,18 @@
+/*
+ * MultiAccess.cpp
+ *
+ *  Created on: 2020/11/17
+ *      Author: miyak
+ */
+
+#include "MiYALAB_STM32F446RE.h"
+
+MultiAccess::MultiAccess() {
+	// TODO 自動生成されたコンストラクター・スタブ
+
+}
+
+MultiAccess::~MultiAccess() {
+	// TODO Auto-generated destructor stub
+}
+

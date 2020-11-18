@@ -1,0 +1,164 @@
+/*
+ * Copyright (c) 2020 K.Miyauchi
+ * This software is released under the MIT LICENSE
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * File  : OSL_STM32F446_ADC.cpp
+ * Author: Koshiro Miyauchi
+ *
+ * Version : 1.00
+ */
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// �C���N���[�h
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#include "MiYALAB_STM32F446_ADC.h"
+
+//--------------------------------------------------------------------------------------------
+// Open Source Library
+// ADC Mode �N���X�@Enable�֐�
+// �w�肵��IN�[�q��ADC�l��ǂݍ��݂܂��B
+// In : OSL::STM32F446::AD::IN_X(X=0~15)
+// return : ADC�l
+//--------------------------------------------------------------------------------------------
+uint16_t OSL::STM32F446::ADC_Mode::Read(uint16_t In)
+{
+	uint16_t AdcValue = 0;
+
+	// �n�[�h�E�F�A�ݒ�p�f�[�^�Q
+	ADC_ChannelConfTypeDef Config = {0};
+
+	// �[�q�ݒ�i�A�i���O���̓��[�h�ɐ؂�ւ��j
+	Enable(In);
+
+	// �`�����l���ݒ�
+	Config.Rank = 1;
+	Config.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+
+	if((In & OSL::STM32F446::AD::IN_0) == OSL::STM32F446::AD::IN_0) Config.Channel = ADC_CHANNEL_0;
+	else if((In & OSL::STM32F446::AD::IN_1) == OSL::STM32F446::AD::IN_1) Config.Channel = ADC_CHANNEL_1;
+	else if((In & OSL::STM32F446::AD::IN_2) == OSL::STM32F446::AD::IN_2) Config.Channel = ADC_CHANNEL_2;
+	else if((In & OSL::STM32F446::AD::IN_3) == OSL::STM32F446::AD::IN_3) Config.Channel = ADC_CHANNEL_3;
+	else if((In & OSL::STM32F446::AD::IN_4) == OSL::STM32F446::AD::IN_4) Config.Channel = ADC_CHANNEL_4;
+	else if((In & OSL::STM32F446::AD::IN_5) == OSL::STM32F446::AD::IN_5) Config.Channel = ADC_CHANNEL_5;
+	else if((In & OSL::STM32F446::AD::IN_6) == OSL::STM32F446::AD::IN_6) Config.Channel = ADC_CHANNEL_6;
+	else if((In & OSL::STM32F446::AD::IN_7) == OSL::STM32F446::AD::IN_7) Config.Channel = ADC_CHANNEL_7;
+	else if((In & OSL::STM32F446::AD::IN_8) == OSL::STM32F446::AD::IN_8) Config.Channel = ADC_CHANNEL_8;
+	else if((In & OSL::STM32F446::AD::IN_9) == OSL::STM32F446::AD::IN_9) Config.Channel = ADC_CHANNEL_9;
+	else if((In & OSL::STM32F446::AD::IN_10) == OSL::STM32F446::AD::IN_10) Config.Channel = ADC_CHANNEL_10;
+	else if((In & OSL::STM32F446::AD::IN_11) == OSL::STM32F446::AD::IN_11) Config.Channel = ADC_CHANNEL_11;
+	else if((In & OSL::STM32F446::AD::IN_12) == OSL::STM32F446::AD::IN_12) Config.Channel = ADC_CHANNEL_12;
+	else if((In & OSL::STM32F446::AD::IN_13) == OSL::STM32F446::AD::IN_13) Config.Channel = ADC_CHANNEL_13;
+	else if((In & OSL::STM32F446::AD::IN_14) == OSL::STM32F446::AD::IN_14) Config.Channel = ADC_CHANNEL_14;
+	else if((In & OSL::STM32F446::AD::IN_15) == OSL::STM32F446::AD::IN_15) Config.Channel = ADC_CHANNEL_15;
+	else return 0;
+
+	// �`�����l���ݒ� �K�p
+	if(HAL_ADC_ConfigChannel(&hAdc, &Config) != HAL_OK){
+		return 0;
+	}
+
+	// ADC�J�n
+	if(HAL_ADC_Start(&hAdc) != HAL_OK){
+		return 0;
+	}
+
+	// AD�ϊ�
+	if(HAL_ADC_PollForConversion(&hAdc, 10) != HAL_OK){
+		return 0;
+	}
+
+	// ADC�l�擾
+	if((HAL_ADC_GetState(&hAdc) & HAL_ADC_STATE_REG_EOC) == HAL_ADC_STATE_REG_EOC){
+		AdcValue = HAL_ADC_GetValue(&hAdc);
+	}
+
+	// ADC��~
+	if(HAL_ADC_Stop(&hAdc) != HAL_OK){
+		return 0;
+	}
+
+	return AdcValue;
+}
+
+//--------------------------------------------------------------------------------------------
+// Open Source Library
+// ADC Mode �N���X�@Enable�֐�
+// �g�p����ADC��IN�[�q��ݒ肵�܂��B
+// In : OSL::STM32F446::AD::IN_X(X=0~15)
+// return : 0(����)
+//			otherwise(�G���[)
+//--------------------------------------------------------------------------------------------
+uint8_t OSL::STM32F446::ADC_Mode::Enable(uint16_t In)
+{
+	// �n�[�h�E�F�A�ݒ�p�f�[�^�Q
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	//�@GPIO�ݒ�
+	GpioInitStruct.Mode = GPIO_MODE_ANALOG;
+	GpioInitStruct.Pull = GPIO_NOPULL;
+
+	// IN0 ~ IN7 �̐ݒ�
+	if(In & (OSL::STM32F446::AD::IN_0 | OSL::STM32F446::AD::IN_1 | OSL::STM32F446::AD::IN_2 |
+			OSL::STM32F446::AD::IN_3 | OSL::STM32F446::AD::IN_4 | OSL::STM32F446::AD::IN_5 |
+			OSL::STM32F446::AD::IN_6 | OSL::STM32F446::AD::IN_7)){
+		// �N���b�N�ݒ�
+		__HAL_RCC_GPIOA_CLK_ENABLE();
+
+		if(In & OSL::STM32F446::AD::IN_0) GpioInitStruct.Pin = GPIO_PIN_0;
+		else if(In & OSL::STM32F446::AD::IN_1) GpioInitStruct.Pin = GPIO_PIN_1;
+		else if(In & OSL::STM32F446::AD::IN_2) GpioInitStruct.Pin = GPIO_PIN_2;
+		else if(In & OSL::STM32F446::AD::IN_3) GpioInitStruct.Pin = GPIO_PIN_3;
+		else if(In & OSL::STM32F446::AD::IN_4) GpioInitStruct.Pin = GPIO_PIN_4;
+		else if(In & OSL::STM32F446::AD::IN_5) GpioInitStruct.Pin = GPIO_PIN_5;
+		else if(In & OSL::STM32F446::AD::IN_6) GpioInitStruct.Pin = GPIO_PIN_6;
+		else if(In & OSL::STM32F446::AD::IN_7) GpioInitStruct.Pin = GPIO_PIN_7;
+		else return HAL_ERROR;
+
+		// GPIO�ݒ� �K�p
+		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
+
+		return HAL_OK;
+	}
+
+	// IN8 ~ IN9 �̐ݒ�
+	if(In & (OSL::STM32F446::AD::IN_8 | OSL::STM32F446::AD::IN_9)){
+		// �N���b�N�ݒ�
+		__HAL_RCC_GPIOB_CLK_ENABLE();
+
+		if(In & OSL::STM32F446::AD::IN_8) GpioInitStruct.Pin = GPIO_PIN_0;
+		else if(In & OSL::STM32F446::AD::IN_9) GpioInitStruct.Pin = GPIO_PIN_1;
+		else return HAL_ERROR;
+
+		// GPIO�ݒ� �K�p
+		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
+
+		return HAL_OK;
+	}
+
+	// IN10 ~ IN5 �̐ݒ�
+	if(In & (OSL::STM32F446::AD::IN_10 | OSL::STM32F446::AD::IN_11 | OSL::STM32F446::AD::IN_12 |
+			OSL::STM32F446::AD::IN_13 |OSL::STM32F446::AD::IN_14 | OSL::STM32F446::AD::IN_15)){
+		// �N���b�N�ݒ�
+		__HAL_RCC_GPIOC_CLK_ENABLE();
+
+		if(In & OSL::STM32F446::AD::IN_10) GpioInitStruct.Pin = GPIO_PIN_0;
+		else if(In & OSL::STM32F446::AD::IN_11) GpioInitStruct.Pin = GPIO_PIN_1;
+		else if(In & OSL::STM32F446::AD::IN_12) GpioInitStruct.Pin = GPIO_PIN_2;
+		else if(In & OSL::STM32F446::AD::IN_13) GpioInitStruct.Pin = GPIO_PIN_3;
+		else if(In & OSL::STM32F446::AD::IN_14) GpioInitStruct.Pin = GPIO_PIN_4;
+		else if(In & OSL::STM32F446::AD::IN_15) GpioInitStruct.Pin = GPIO_PIN_5;
+		else return HAL_ERROR;
+
+		// GPIO�ݒ� �K�p
+		HAL_GPIO_Init(GPIOC, &GpioInitStruct);
+
+		return HAL_OK;
+	}
+
+	return HAL_ERROR;
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// end of file
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,203 @@
+16:32:19 **** インクリメンタル・ビルド of configuration Debug_CM7 for project nucleo144_h745 ****
+make -j4 all 
+Building file: ../startup/startup_stm32h745xx_CM7.s
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c"
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -g -o "startup/startup_stm32h745xx_CM7.o" "../startup/startup_stm32h745xx_CM7.s"
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c"
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c"
+Finished building: ../startup/startup_stm32h745xx_CM7.s
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.c
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+ 
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.c"
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+ 
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c"
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.c
+ 
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c"
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c"
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+ 
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c"
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+ 
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c"
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c"
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+ 
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c"
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.o" -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.o" "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+ 
+Building file: ../Common/Src/syscalls.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Common/Src/syscalls.d" -MT"Common/Src/syscalls.o" -o "Common/Src/syscalls.o" "../Common/Src/syscalls.c"
+Finished building: ../Common/Src/syscalls.c
+ 
+Building file: ../Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" "../Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+ 
+Building file: ../CM7/Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"CM7/Core/Src/main.d" -MT"CM7/Core/Src/main.o" -o "CM7/Core/Src/main.o" "../CM7/Core/Src/main.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+ 
+Building file: ../CM7/Core/Src/stm32h7xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"CM7/Core/Src/stm32h7xx_hal_msp.d" -MT"CM7/Core/Src/stm32h7xx_hal_msp.o" -o "CM7/Core/Src/stm32h7xx_hal_msp.o" "../CM7/Core/Src/stm32h7xx_hal_msp.c"
+Finished building: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c
+ 
+Building file: ../CM7/Core/Src/stm32h7xx_it.c
+Invoking: MCU GCC Compiler
+C:\Users\miyak\STM32CubeMX\nucleo144_h745\Debug_CM7
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/CM7/Core/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Device/ST/STM32H7xx/Include" -I"C:/Users/miyak/STM32CubeMX/nucleo144_h745/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"CM7/Core/Src/stm32h7xx_it.d" -MT"CM7/Core/Src/stm32h7xx_it.o" -o "CM7/Core/Src/stm32h7xx_it.o" "../CM7/Core/Src/stm32h7xx_it.c"
+Finished building: ../Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c
+ 
+Finished building: ../CM7/Core/Src/main.c
+ 
+Finished building: ../CM7/Core/Src/stm32h7xx_hal_msp.c
+ 
+Finished building: ../CM7/Core/Src/stm32h7xx_it.c
+ 
+Building target: nucleo144_h745_CM7.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -specs=nosys.specs -specs=nano.specs -T"../stm32h745xx_flash_CM7.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "nucleo144_h745_CM7.elf" @"objects.list"   -lm
+Finished building target: nucleo144_h745_CM7.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo144_h745_CM7.elf" "nucleo144_h745_CM7.hex"
+arm-none-eabi-size "nucleo144_h745_CM7.elf"
+   text	   data	    bss	    dec	    hex	filename
+  16376	    216	   2904	  19496	   4c28	nucleo144_h745_CM7.elf
+ 
+
+16:32:43 Build Finished (took 23s.787ms)
+
