@@ -24,7 +24,7 @@
  * File  : MiYALAB_STM32F446RE_ADC.h
  * Author: K.Miyauchi
  *
- * Version : 1.01
+ * Version : 1.00
  */
 
 #ifndef MiYALAB_STM32F446_ADC_H_
@@ -61,8 +61,8 @@ namespace MiYALAB{
 			constexpr uint16_t IN_5 = 0x0020;		// ADC IN5端子(PA5)
 			constexpr uint16_t IN_6 = 0x0040;		// ADC IN6端子(PA6)
 			constexpr uint16_t IN_7 = 0x0080;		// ADC IN7端子(PA7)
-			constexpr uint16_t IN_8 = 0x0100;		// ADC IN8端子(PB0)
-			constexpr uint16_t IN_9 = 0x0200;		// ADC IN9端子(PB1)
+			constexpr uint16_t IN_8 = 0x0100;		// ADC IN8端子(PB1)
+			constexpr uint16_t IN_9 = 0x0200;		// ADC IN9端子(PB2)
 			constexpr uint16_t IN_10 = 0x0400;		// ADC IN10端子(PC0)
 			constexpr uint16_t IN_11 = 0x0800;		// ADC IN11端子(PC1)
 			constexpr uint16_t IN_12 = 0x1000;		// ADC IN12端子(PC2)
@@ -78,7 +78,7 @@ namespace MiYALAB{
 		public:
 			~ADC_Mode();
 			uint8_t Init(uint32_t Resolution);
-			int16_t Read(uint16_t In);
+			uint16_t Read(uint16_t In);
 		private:
 			uint8_t Enable(uint16_t In);
 			ADC_HandleTypeDef hAdc;
@@ -140,6 +140,3 @@ inline uint8_t MiYALAB::STM32F446RE::ADC_Mode::Init(uint32_t Resolution)
 //------------------------------------------------------------------------------
 // end of file
 //------------------------------------------------------------------------------
-/*
- * 2020.11.23 コメントの一部を修正
- */

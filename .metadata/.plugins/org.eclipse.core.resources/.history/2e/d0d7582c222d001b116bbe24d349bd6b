@@ -78,7 +78,7 @@ namespace MiYALAB{
 		public:
 			~ADC_Mode();
 			uint8_t Init(uint32_t Resolution);
-			int16_t Read(uint16_t In);
+			uint16_t Read(uint16_t In);
 		private:
 			uint8_t Enable(uint16_t In);
 			ADC_HandleTypeDef hAdc;
