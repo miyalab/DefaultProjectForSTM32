@@ -15,6 +15,7 @@
 #include "stm32f4xx.h"
 
 #include "MiYALAB_STM32F446RE.h"
+#include "MiYALAB_STM32F446RE_ADC.h"
 #include "MiYALAB_STM32F446RE_TIM.h"
 #include "MiYALAB_STM32F446RE_USART.h"
 
@@ -52,7 +53,7 @@ int main()
 	HardwareSetup();
 
 	// UART設定
-	Uart2.Init(9600,UART_WORDLENGTH_8B,UART_STOPBITS_1,UART_PARITY_NONE);
+	Uart2.Init(9600, UART_WORDLENGTH_8B, UART_STOPBITS_1, UART_PARITY_NONE);
 	Uart2.Enable();
 	MiYALAB::STM32F446RE::USART_stdioEnable();
 
@@ -118,8 +119,8 @@ uint8_t HardwareSetup()
 	ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
 	ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
 	ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-	ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
-	ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+	ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;				// APB1 90MHz
+	ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;				// APB2 180MHz
 
 	// CLK設定適用
 	if (HAL_RCC_ClockConfig(&ClkInitStruct, FLASH_LATENCY_5) != HAL_OK){
@@ -146,7 +147,7 @@ uint8_t HardwareSetup()
 }
 
 //------------------------------------------------------------------------------
-// TIM6 割込み関数（未定義用）
+// TIM7 割込み関数
 //------------------------------------------------------------------------------
 void MiYALAB::STM32F446RE::TIM7_InterruptFunction()
 {
