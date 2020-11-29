@@ -4,7 +4,7 @@
  * Controller: STM32 Nucleo64-F446RE
  *
  * Date   : 2019/11/30
- * Author : Koshiro Miyauchi
+ * Author : K.Miyauchi
  */
 
 //--------------------------

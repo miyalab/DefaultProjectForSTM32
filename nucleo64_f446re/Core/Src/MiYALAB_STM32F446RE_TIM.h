@@ -27,18 +27,19 @@
  * Version : 1.00
  */
 
-#ifndef SRC_MiYALAB_STM32F446RE_TIM_H_
-#define SRC_MiYALAB_STM32F446RE_TIM_H_
+#ifndef MiYALAB_STM32F446RE_TIM_H_
+#define MiYALAB_STM32F446RE_TIM_H_
 
 //--------------------------
 // TIM機能使用許可
 //--------------------------
-//#define HAL_TIM_MODULE_ENABLED
+#define HAL_TIM_MODULE_ENABLED
 
 //--------------------------
 // インクルード
 //--------------------------
 #include "stm32f4xx.h"
+#include "stm32f4xx_hal_tim.h"
 
 //--------------------------
 // プロトタイプ宣言
@@ -1362,7 +1363,7 @@ inline uint8_t MiYALAB::STM32F446RE::TIM8_EncoderMode::Enable()
 	return HAL_OK;
 }
 
-#endif /* SRC_MiYALAB_STM32F446RE_TIM_H_ */
+#endif /* MiYALAB_STM32F446RE_TIM_H_ */
 
 //------------------------------------------------------------------------------
 // end of file

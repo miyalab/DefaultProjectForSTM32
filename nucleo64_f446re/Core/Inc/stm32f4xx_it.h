@@ -1,8 +1,11 @@
 /*
- * File   : stm32f4xx_it.h
- * Author : Koshiro Miyauchi
+ * File : stm32f3xx_it.h
+ *
+ * Controller: STM32 Nucleo32-F446RE
+ *
+ * Date   : 2019/11/30
+ * Author : K.Miyauchi
  */
-
 #ifndef __STM32F4xx_IT_H
 #define __STM32F4xx_IT_H
 

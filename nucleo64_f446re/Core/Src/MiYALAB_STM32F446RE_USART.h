@@ -27,8 +27,8 @@
  * Version : 1.00
  */
 
-#ifndef SRC_MIYALAB_STM32F446RE_USART_H_
-#define SRC_MIYALAB_STM32F446RE_USART_H_
+#ifndef MIYALAB_STM32F446RE_USART_H_
+#define MIYALAB_STM32F446RE_USART_H_
 
 //--------------------------
 // UART機能使用許可
@@ -39,6 +39,7 @@
 // インクルード
 //--------------------------
 #include "stm32f4xx.h"
+#include "stm32f4xx_hal_uart.h"
 
 //--------------------------
 // プロトタイプ宣言
@@ -454,7 +455,7 @@ inline uint8_t MiYALAB::STM32F446RE::USART6_UartMode::Enable()
 	return HAL_OK;
 }
 
-#endif /* SRC_MIYALAB_STM32F446RE_USART_H_ */
+#endif /* MIYALAB_STM32F446RE_USART_H_ */
 
 //------------------------------------------------------------------------------
 // end of file

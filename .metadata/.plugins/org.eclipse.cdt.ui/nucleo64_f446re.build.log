@@ -1,7 +1,7 @@
-11:44:35 **** クリーンのみのビルド of configuration Debug for project nucleo64_f446re ****
+16:59:20 **** クリーンのみのビルド of configuration Debug for project nucleo64_f446re ****
 make -j4 clean 
 rm -rf *
  
 
-11:44:35 Build Finished (took 329ms)
+16:59:20 Build Finished (took 430ms)
 
