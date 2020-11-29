@@ -1,7 +1,7 @@
-16:59:13 **** クリーンのみのビルド of configuration Debug for project nucleo32_f303k8 ****
+20:45:56 **** クリーンのみのビルド of configuration Debug for project nucleo32_f303k8 ****
 make -j4 clean 
 rm -rf *
  
 
-16:59:14 Build Finished (took 629ms)
+20:45:57 Build Finished (took 1s.87ms)
 

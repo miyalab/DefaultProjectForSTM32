@@ -14,6 +14,8 @@
 #include <stdio.h>
 #include "stm32f3xx.h"
 
+#include "MiYALAB_STM32F303K8.h"
+
 //--------------------------
 // シンボル定義
 //--------------------------
@@ -39,7 +41,7 @@ uint8_t HardwareSetup();
 //------------------------------------------------------------------------------
 // メイン関数
 //------------------------------------------------------------------------------
-int main(void)
+int main()
 {
 	// マイコン機能初期化
 	HardwareSetup();
@@ -97,6 +99,7 @@ uint8_t HardwareSetup()
 		return HAL_ERROR;
 	}
 
+	// GPIO設定
 	GpioInitStruct.Pin = GPIO_PIN_3;
 	GpioInitStruct.Mode = GPIO_MODE_OUTPUT_PP;
 	GpioInitStruct.Pull = GPIO_NOPULL;
