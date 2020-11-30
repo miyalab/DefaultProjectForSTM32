@@ -1,4 +1,4 @@
-20:45:56 **** クリーンのみのビルド of configuration Debug for project nucleo32_f303k8 ****
+23:59:50 **** クリーンのみのビルド of configuration Debug for project nucleo32_f303k8 ****
 make -j4 clean 
 rm -rf *
  

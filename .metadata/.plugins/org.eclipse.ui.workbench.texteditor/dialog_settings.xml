@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MiYALAB::STM32F446RE::hTim7" key="selection"/>
+		<item value="STM32F303K8" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="STM32F446RE"/>
 			<item value="hTim7"/>
 			<item value="hTim6"/>
 			<item value="htim6"/>
@@ -19,9 +20,9 @@
 			<item value="miyalab"/>
 			<item value="osl"/>
 			<item value="TIM"/>
-			<item value="MiYALAB"/>
 		</list>
 		<list key="replacehistory">
+			<item value="STM32F303K8"/>
 			<item value="MiYALAB::STM32F446RE::hTim7"/>
 			<item value="MiYALAB::STM32F446RE::hTim6"/>
 			<item value="MiYALAB::STM32F446"/>
@@ -29,7 +30,6 @@
 			<item value="MiYA LAB OSS"/>
 			<item value="MiYALAB"/>
 			<item value="STM32F446RE"/>
-			<item value="STM32F446RE::"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

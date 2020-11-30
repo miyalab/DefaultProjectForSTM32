@@ -15,6 +15,7 @@
 #include "stm32f3xx.h"
 
 #include "MiYALAB_STM32F303K8.h"
+#include "MiYALAB_STM32F303K8_TIM_TIMER.h"
 
 //--------------------------
 // シンボル定義
@@ -28,15 +29,18 @@ constexpr uint8_t APB2_PERIPHERAL = 72;
 //--------------------------
 // グローバル変数宣言
 //--------------------------
+MiYALAB::MultiAccess<uint16_t> delayCnt;
 
 //--------------------------
 // ライブラリモジュール
 //--------------------------
+MiYALAB::STM32F303K8::TIM7_TimerMode Tim7;
 
 //--------------------------
 // プロトタイプ宣言
 //--------------------------
 uint8_t HardwareSetup();
+void delay(uint16_t delaySet);
 
 //------------------------------------------------------------------------------
 // メイン関数
@@ -46,8 +50,12 @@ int main()
 	// マイコン機能初期化
 	HardwareSetup();
 
-	while (1){
+	// タイマー設定
+	Tim7.Init(72,1000);
 
+	while (1){
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+		delay(1000);
 	}
 }
 
@@ -107,6 +115,24 @@ uint8_t HardwareSetup()
 	HAL_GPIO_Init(GPIOB, &GpioInitStruct);
 
 	return HAL_OK;
+}
+
+//------------------------------------------------------------------------------
+// TIM7 割込み関数
+//------------------------------------------------------------------------------
+void MiYALAB::STM32F303K8::TIM7_InterruptFunction()
+{
+	delayCnt.Add(1);
+}
+
+//------------------------------------------------------------------------------
+// プログラム停止関数
+//　delaySet : 待機時間[s] = delaySet * TIM7の割り込み周期[s]
+//------------------------------------------------------------------------------
+void delay(uint16_t delaySet)
+{
+	delayCnt.Clear();
+	while(delayCnt.Read() < delaySet);
 }
 
 //------------------------------------------------------------------------------
