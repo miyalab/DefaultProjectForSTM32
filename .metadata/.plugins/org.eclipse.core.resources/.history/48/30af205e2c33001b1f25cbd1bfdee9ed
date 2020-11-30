@@ -40,7 +40,7 @@
 //--------------------------
 #include "stm32f3xx.h"
 #include "stm32f3xx_hal_uart.h"
-#include <USART/UsartCommon.h>
+#include "Common.h"
 
 //--------------------------
 // プロトタイプ宣言

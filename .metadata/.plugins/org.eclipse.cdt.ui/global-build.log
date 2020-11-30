@@ -2052,3 +2052,156 @@ arm-none-eabi-size "nucleo32_f303k8.elf"
    text	   data	    bss	    dec	    hex	filename
    5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
  
+01:39:50 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Common.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Timer.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Common.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Common.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Common.o" "../Drivers/MiYALAB_STM32F303K8/USART/Common.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Timer.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Timer.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Timer.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Timer.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Common.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Timer.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 
+01:42:38 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:49:18: error: 'MiYALAB::STM32F446RE' has not been declared
+ uint8_t MiYALAB::STM32F446RE::USART_UartMode::Init(uint32_t Baudrate, uint32_t Length, uint32_t StopBits, uint32_t Parity)
+                  ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: In function 'uint8_t Init(uint32_t, uint32_t, uint32_t, uint32_t)':
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:52:2: error: 'hUart' was not declared in this scope
+  hUart.Init.BaudRate = Baudrate;
+  ^~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: At global scope:
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:72:10: error: 'STM32F446RE' in namespace 'MiYALAB' does not name a type
+ MiYALAB::STM32F446RE::USART1_UartMode::USART1_UartMode()
+          ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:82:10: error: 'STM32F446RE' in namespace 'MiYALAB' does not name a type
+ MiYALAB::STM32F446RE::USART1_UartMode::~USART1_UartMode()
+          ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:92:18: error: 'MiYALAB::STM32F446RE' has not been declared
+ uint8_t MiYALAB::STM32F446RE::USART1_UartMode::Enable()
+                  ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: In function 'uint8_t Enable()':
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:104:25: error: 'GPIO_SPEED_FREQ_VERY_HIGH' was not declared in this scope
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:104:25: note: suggested alternative: 'GPIO_SPEED_FREQ_HIGH'
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                         GPIO_SPEED_FREQ_HIGH
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: At global scope:
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:115:10: error: 'STM32F446RE' in namespace 'MiYALAB' does not name a type
+ MiYALAB::STM32F446RE::USART2_UartMode::USART2_UartMode()
+          ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:125:10: error: 'STM32F446RE' in namespace 'MiYALAB' does not name a type
+ MiYALAB::STM32F446RE::USART2_UartMode::~USART2_UartMode()
+          ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:135:18: error: 'MiYALAB::STM32F446RE' has not been declared
+ uint8_t MiYALAB::STM32F446RE::USART2_UartMode::Enable()
+                  ^~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: In function 'uint8_t Enable()':
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:135:9: error: redefinition of 'uint8_t Enable()'
+ uint8_t MiYALAB::STM32F446RE::USART2_UartMode::Enable()
+         ^~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:92:9: note: 'uint8_t Enable()' previously defined here
+ uint8_t MiYALAB::STM32F446RE::USART1_UartMode::Enable()
+         ^~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:147:25: error: 'GPIO_SPEED_FREQ_VERY_HIGH' was not declared in this scope
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:147:25: note: suggested alternative: 'GPIO_SPEED_FREQ_HIGH'
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                         GPIO_SPEED_FREQ_HIGH
+make: *** [Drivers/MiYALAB_STM32F303K8/USART/Uart.o] Error 1
+Drivers/MiYALAB_STM32F303K8/USART/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F303K8/USART/Uart.o' failed
+01:42:54 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: In member function 'uint8_t MiYALAB::STM32F303K8::USART1_UartMode::Enable()':
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:104:25: error: 'GPIO_SPEED_FREQ_VERY_HIGH' was not declared in this scope
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:104:25: note: suggested alternative: 'GPIO_SPEED_FREQ_HIGH'
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                         GPIO_SPEED_FREQ_HIGH
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp: In member function 'uint8_t MiYALAB::STM32F303K8::USART2_UartMode::Enable()':
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:147:25: error: 'GPIO_SPEED_FREQ_VERY_HIGH' was not declared in this scope
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp:147:25: note: suggested alternative: 'GPIO_SPEED_FREQ_HIGH'
+  GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                         GPIO_SPEED_FREQ_HIGH
+Drivers/MiYALAB_STM32F303K8/USART/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F303K8/USART/Uart.o' failed
+make: *** [Drivers/MiYALAB_STM32F303K8/USART/Uart.o] Error 1
+01:43:35 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 
+01:50:28 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 

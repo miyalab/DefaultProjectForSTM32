@@ -56,8 +56,6 @@ uint8_t MiYALAB::STM32F303K8::USART_UartMode::Init(uint32_t Baudrate, uint32_t L
 	hUart.Init.Mode = UART_MODE_TX_RX;
 	hUart.Init.HwFlowCtl = UART_HWCONTROL_NONE;
 	hUart.Init.OverSampling = UART_OVERSAMPLING_16;
-	hUart.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-	hUart.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
 
 	// USART設定適用(UART)
 	if(HAL_UART_Init(&hUart) != HAL_OK){
@@ -97,15 +95,15 @@ uint8_t MiYALAB::STM32F303K8::USART1_UartMode::Enable()
 	GPIO_InitTypeDef GpioInitStruct = {0};
 
 	// クロック許可
-	__HAL_RCC_GPIOB_CLK_ENABLE();
+	__HAL_RCC_GPIOA_CLK_ENABLE();
 
 	// GPIO設定
-	GpioInitStruct.Pin = GPIO_PIN_6 | GPIO_PIN_7;
+	GpioInitStruct.Pin = GPIO_PIN_9 | GPIO_PIN_10;
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
 	GpioInitStruct.Pull = GPIO_PULLUP;
-	GpioInitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
 	GpioInitStruct.Alternate = GPIO_AF7_USART1;
-	HAL_GPIO_Init(GPIOB, &GpioInitStruct);
+	HAL_GPIO_Init(GPIOA, &GpioInitStruct);
 
 	return HAL_OK;
 }
@@ -143,10 +141,10 @@ uint8_t MiYALAB::STM32F303K8::USART2_UartMode::Enable()
 	__HAL_RCC_GPIOA_CLK_ENABLE();
 
 	// GPIO設定
-	GpioInitStruct.Pin = GPIO_PIN_2 | GPIO_PIN_15;
+	GpioInitStruct.Pin = GPIO_PIN_2 | GPIO_PIN_3;
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
 	GpioInitStruct.Pull = GPIO_PULLUP;
-	GpioInitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
 	GpioInitStruct.Alternate = GPIO_AF7_USART2;
 	HAL_GPIO_Init(GPIOA, &GpioInitStruct);
 

@@ -1,16 +1,10 @@
-01:34:20 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+01:50:28 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
 make -j4 all 
-Building file: ../Drivers/MiYALAB_STM32F303K8/SPI/Master.cpp
-Building file: ../Drivers/MiYALAB_STM32F303K8/SPI/Slave.cpp
-Invoking: MCU G++ Compiler
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
 Invoking: MCU G++ Compiler
 C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/SPI/Master.d" -MT"Drivers/MiYALAB_STM32F303K8/SPI/Master.o" -o "Drivers/MiYALAB_STM32F303K8/SPI/Master.o" "../Drivers/MiYALAB_STM32F303K8/SPI/Master.cpp"
-C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/SPI/Slave.d" -MT"Drivers/MiYALAB_STM32F303K8/SPI/Slave.o" -o "Drivers/MiYALAB_STM32F303K8/SPI/Slave.o" "../Drivers/MiYALAB_STM32F303K8/SPI/Slave.cpp"
-Finished building: ../Drivers/MiYALAB_STM32F303K8/SPI/Master.cpp
-Finished building: ../Drivers/MiYALAB_STM32F303K8/SPI/Slave.cpp
- 
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
  
 Building target: nucleo32_f303k8.elf
 Invoking: MCU G++ Linker
@@ -25,5 +19,5 @@ arm-none-eabi-size "nucleo32_f303k8.elf"
    5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
  
 
-01:34:23 Build Finished (took 3s.343ms)
+01:50:32 Build Finished (took 3s.968ms)
 
