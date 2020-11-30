@@ -87,55 +87,6 @@ namespace MiYALAB{
 	}
 }
 
-//------------------------------------------------------------------------------
-// MiYA LAB OSS
-// ADC Mode クラス デストラクタ
-// ADC CLK停止
-//------------------------------------------------------------------------------
-inline MiYALAB::STM32F446RE::ADC_Mode::~ADC_Mode()
-{
-	HAL_ADC_Stop(&hAdc);
-	HAL_ADC_DeInit(&hAdc);
-	__HAL_RCC_ADC1_CLK_ENABLE();
-}
-
-//------------------------------------------------------------------------------
-// MiYA LAB OSS
-// ADC Mode スーパークラス　Init関数
-// Resolution : ADC_RESOLUTION_6B(6bit ADC)
-//            : ADC_RESOLUTION_8B(8bit ADC)
-//            : ADC_RESOLUTION_10B(10bit ADC)
-//            : ADC_RESOLUTION_12B(12bit ADC)
-// return : 0(正常)
-//			otherwise(エラー)
-//------------------------------------------------------------------------------
-inline uint8_t MiYALAB::STM32F446RE::ADC_Mode::Init(uint32_t Resolution)
-{
-	// クロック設定
-	__HAL_RCC_ADC1_CLK_ENABLE();
-
-	// ADC設定
-	hAdc.Instance = ADC1;
-	hAdc.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
-	hAdc.Init.Resolution = Resolution;
-	hAdc.Init.ScanConvMode = DISABLE;
-	hAdc.Init.ContinuousConvMode = DISABLE;
-	hAdc.Init.DiscontinuousConvMode = DISABLE;
-	hAdc.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
-	hAdc.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-	hAdc.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-	hAdc.Init.NbrOfConversion = 1;
-	hAdc.Init.DMAContinuousRequests = DISABLE;
-	hAdc.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
-
-	// ADC設定 適用
-	if(HAL_ADC_Init(&hAdc) != HAL_OK){
-		return 0;
-	}
-
-	return HAL_OK;
-}
-
 #endif /* MiYALAB_STM32F446_ADC_H_ */
 
 //------------------------------------------------------------------------------

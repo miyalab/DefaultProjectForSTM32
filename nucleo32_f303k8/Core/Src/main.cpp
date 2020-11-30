@@ -14,8 +14,9 @@
 #include <stdio.h>
 #include "stm32f3xx.h"
 
-#include "MiYALAB_STM32F303K8.h"
-#include "MiYALAB_STM32F303K8_TIM_TIMER.h"
+#include "Calculator.h"
+#include "TIM/Timer.h"
+#include "USART/Uart.h"
 
 //--------------------------
 // シンボル定義
@@ -54,8 +55,7 @@ int main()
 	Tim7.Init(72,1000);
 
 	while (1){
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-		delay(1000);
+
 	}
 }
 

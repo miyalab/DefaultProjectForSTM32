@@ -67,6 +67,267 @@ uint8_t MiYALAB::STM32F446RE::USART_UartMode::Init(uint32_t Baudrate, uint32_t L
 }
 
 //--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART1 Uart Mode クラス　コンストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART1_UartMode::USART1_UartMode()
+{
+	__HAL_RCC_USART1_CLK_ENABLE();
+	hUart.Instance = USART1;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART1 Uart Mode クラス　デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART1_UartMode::~USART1_UartMode()
+{
+	HAL_UART_DeInit(&hUart);
+	__HAL_RCC_USART1_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART1 Uart Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::USART1_UartMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_9 | GPIO_PIN_10;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_PULLUP;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF7_USART1;
+	HAL_GPIO_Init(GPIOA, &GpioInitStruct);
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART2 Uart Mode クラス　コンストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART2_UartMode::USART2_UartMode()
+{
+	__HAL_RCC_USART2_CLK_ENABLE();
+	hUart.Instance = USART2;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART2 Uart Mode クラス　デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART2_UartMode::~USART2_UartMode()
+{
+	HAL_UART_DeInit(&hUart);
+	__HAL_RCC_USART2_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART2 Uart Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::USART2_UartMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_2 | GPIO_PIN_3;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_PULLUP;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF7_USART2;
+	HAL_GPIO_Init(GPIOA, &GpioInitStruct);
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART3 Uart Mode クラス　コンストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART3_UartMode::USART3_UartMode()
+{
+	__HAL_RCC_USART3_CLK_ENABLE();
+	hUart.Instance = USART3;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART3 Uart Mode クラス　デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART3_UartMode::~USART3_UartMode()
+{
+	HAL_UART_DeInit(&hUart);
+	__HAL_RCC_USART3_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART3 Uart Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::USART3_UartMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_11;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_PULLUP;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF7_USART3;
+	HAL_GPIO_Init(GPIOC, &GpioInitStruct);
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// UART4 Uart Mode クラス　コンストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::UART4_UartMode::UART4_UartMode()
+{
+	__HAL_RCC_UART4_CLK_ENABLE();
+	hUart.Instance = UART4;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// UART4 Uart Mode クラス　デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::UART4_UartMode::~UART4_UartMode()
+{
+	HAL_UART_DeInit(&hUart);
+	__HAL_RCC_UART4_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// UART4 Uart Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::UART4_UartMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_0 | GPIO_PIN_1;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_PULLUP;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF8_UART4;
+	HAL_GPIO_Init(GPIOA, &GpioInitStruct);
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// UART5 Uart Mode クラス　コンストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::UART5_UartMode::UART5_UartMode()
+{
+	__HAL_RCC_UART5_CLK_ENABLE();
+	hUart.Instance = UART5;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// UART5 Uart Mode クラス　デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::UART5_UartMode::~UART5_UartMode()
+{
+	HAL_UART_DeInit(&hUart);
+	__HAL_RCC_UART5_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// UART5 Uart Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::UART5_UartMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+	__HAL_RCC_GPIOD_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_12;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_PULLUP;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF8_UART5;
+	HAL_GPIO_Init(GPIOC, &GpioInitStruct);
+	GpioInitStruct.Pin = GPIO_PIN_2;
+	HAL_GPIO_Init(GPIOD, &GpioInitStruct);
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART6 Uart Mode クラス　コンストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART6_UartMode::USART6_UartMode()
+{
+	__HAL_RCC_USART6_CLK_ENABLE();
+	hUart.Instance = USART6;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART6 Uart Mode クラス　デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::USART6_UartMode::~USART6_UartMode()
+{
+	HAL_UART_DeInit(&hUart);
+	__HAL_RCC_USART6_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART6 Uart Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::USART6_UartMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_7 | GPIO_PIN_6;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_PULLUP;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF8_USART6;
+	HAL_GPIO_Init(GPIOC, &GpioInitStruct);
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
 // 標準入出力関数使用許可関数
 // main.cppに以下の関数を定義してください。
 // void MiYALAB::STM32F446RE::USART_PutChar(uint8_t C)
