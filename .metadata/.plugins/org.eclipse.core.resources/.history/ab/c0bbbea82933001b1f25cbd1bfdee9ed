@@ -21,32 +21,39 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File  : Timer.h
+ * File  : MiYALAB_STM32F303K8_USART_UART.h
  * Author: K.Miyauchi
  *
  * Version : 1.00
  */
 
-#ifndef SRC_MIYALAB_STM32F303K8_TIM_TIMER_H_
-#define SRC_MIYALAB_STM32F303K8_TIM_TIMER_H_
+#ifndef SRC_MIYALAB_STM32F303K8_USART_UART_H_
+#define SRC_MIYALAB_STM32F303K8_USART_UART_H_
 
 //--------------------------
-// TIM機能使用許可
+// UART機能使用許可
 //--------------------------
-#define HAL_TIM_MODULE_ENABLED
+#define HAL_UART_MODULE_ENABLED
 
 //--------------------------
 // インクルード
 //--------------------------
 #include "stm32f3xx.h"
-#include "stm32f3xx_hal_tim.h"
+#include "stm32f3xx_hal_uart.h"
 
 //--------------------------
 // プロトタイプ宣言
 //--------------------------
 extern "C"{
-	void TIM6_DAC1_IRQHandler(void);
-	void TIM7_DAC2_IRQHandler(void);
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#define GETCHAR_PROTOTYPE int __io_getchar(void)
+	void __io_putchar(uint8_t ch);
+	int __io_getchar(void);
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#define GETCHAR_PROTOTYPE int fgetc(FILE* f)
+#endif
 }
 
 //------------------------------------------------------------------------------
@@ -58,35 +65,42 @@ namespace MiYALAB{
 	//--------------------------------------------------------------------------
 	namespace STM32F303K8{
 		//----------------------------------------------------------------------
-		// TIM6 Timer Mode クラス
+		// USART UART モード 基底クラス
 		//----------------------------------------------------------------------
-		class TIM6_TimerMode{
+		class USART_UartMode{
 		public:
-			uint8_t Init(uint16_t Divide, uint16_t Period);
-			~TIM6_TimerMode();
+			uint8_t Init(uint32_t Baudrate, uint32_t Length, uint32_t StopBits, uint32_t Parity);
+			uint8_t Receive(uint8_t *C, uint16_t TimeOut);
+			uint8_t Receive(uint8_t *Str, uint16_t Size, uint16_t TimeOut);
+			uint8_t Transmit(uint8_t C, uint16_t TimeOut);
+			uint8_t Transmit(uint8_t *Str, uint16_t Size, uint16_t TimeOut);
+		protected:
+			UART_HandleTypeDef hUart;
 		};
 
 		//----------------------------------------------------------------------
-		// TIM7 Timer Mode クラス
+		// USART1 UART モード クラス Tx(PB6), Rx(PB7)
 		//----------------------------------------------------------------------
-		class TIM7_TimerMode{
+		class USART1_UartMode : public USART_UartMode{
 		public:
-			uint8_t Init(uint16_t Divide, uint16_t Period);
-			~TIM7_TimerMode();
+			USART1_UartMode();
+			~USART1_UartMode();
+			uint8_t Enable();
 		};
-		//----------------------------------------------------------------------
-		// TIM6 タイマー割込み関数
-		//----------------------------------------------------------------------
-		void TIM6_InterruptFunction();
 
 		//----------------------------------------------------------------------
-		// TIM7 タイマー割込み関数
+		// USART2 UART モード クラス Tx(PA2), Rx(PA15)
 		//----------------------------------------------------------------------
-		void TIM7_InterruptFunction();
+		class USART2_UartMode : public USART_UartMode{
+		public:
+			USART2_UartMode();
+			~USART2_UartMode();
+			uint8_t Enable();
+		};
 	}
 }
 
-#endif /* SRC_MIYALAB_STM32F303K8_TIM_TIMER_H_ */
+#endif /* SRC_MIYALAB_STM32F303K8_USART_UART_H_ */
 
 //------------------------------------------------------------------------------
 // end of file

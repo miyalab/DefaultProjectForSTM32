@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File  : MiYALAB_STM32F303K8_USART_UART.h
+ * File  : Uart.h
  * Author: K.Miyauchi
  *
  * Version : 1.00
