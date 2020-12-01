@@ -1,0 +1,29 @@
+//--------------------------
+// UART機能使用許可
+//--------------------------
+#define HAL_UART_MODULE_ENABLED
+
+//--------------------------
+// インクルード
+//--------------------------
+#include "stm32f3xx.h"
+#include "stm32f3xx_hal_uart.h"
+
+//--------------------------
+// プロトタイプ宣言
+//--------------------------
+extern "C"{
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#define GETCHAR_PROTOTYPE int __io_getchar(void)
+	void __io_putchar(uint8_t ch);
+	int __io_getchar(void);
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#define GETCHAR_PROTOTYPE int fgetc(FILE* f)
+#endif
+}
+
+//------------------------------------------------------------------------------
+// end of file
+//------------------------------------------------------------------------------

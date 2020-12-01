@@ -27,8 +27,8 @@
  * Version : 1.00
  */
 
-#ifndef MiYALAB_STM32F303K8_H_
-#define MiYALAB_STM32F303K8_H_
+#ifndef SRC_MiYALAB_STM32F303K8_H_
+#define SRC_MiYALAB_STM32F303K8_H_
 
 //--------------------------
 // インクルード
@@ -228,3 +228,6 @@ template <typename type> void MiYALAB::PID<type>::SetLimit(type Limit)
 //--------------------------------------------------------------------------------------------
 // end of file
 //--------------------------------------------------------------------------------------------
+/*
+ * 2020.12.01 : ファイル作成
+ */

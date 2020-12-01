@@ -1,10 +1,16 @@
-01:50:28 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+09:13:27 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
 make -j4 all 
-Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
 Invoking: MCU G++ Compiler
 C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
-Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
  
 Building target: nucleo32_f303k8.elf
 Invoking: MCU G++ Linker
@@ -16,8 +22,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
 arm-none-eabi-size "nucleo32_f303k8.elf"
    text	   data	    bss	    dec	    hex	filename
-   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
  
 
-01:50:32 Build Finished (took 3s.968ms)
+09:13:30 Build Finished (took 3s.78ms)
 

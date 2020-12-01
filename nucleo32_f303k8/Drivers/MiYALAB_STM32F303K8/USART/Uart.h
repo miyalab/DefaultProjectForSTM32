@@ -40,22 +40,7 @@
 //--------------------------
 #include "stm32f3xx.h"
 #include "stm32f3xx_hal_uart.h"
-#include <USART/UsartCommon.h>
-
-//--------------------------
-// プロトタイプ宣言
-//--------------------------
-extern "C"{
-#ifdef __GNUC__
-#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
-#define GETCHAR_PROTOTYPE int __io_getchar(void)
-	void __io_putchar(uint8_t ch);
-	int __io_getchar(void);
-#else
-#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
-#define GETCHAR_PROTOTYPE int fgetc(FILE* f)
-#endif
-}
+#include "UsartCommon.h"
 
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
@@ -101,8 +86,57 @@ namespace MiYALAB{
 	}
 }
 
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART Uart Mode スーパークラス　Receive関数
+// *C : 1文字保存用
+// TimeOut: タイムアウト時間
+//--------------------------------------------------------------------------------------------
+inline uint8_t MiYALAB::STM32F303K8::USART_UartMode::Receive(uint8_t *C, uint16_t TimeOut)
+{
+	return HAL_UART_Receive(&hUart, C, 1, TimeOut);
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART Uart Mode スーパークラス　Receive関数
+// *Str : 文字列保存用
+// Size : Sｔｒのデータサイズ
+// TimeOut: タイムアウト時間
+//--------------------------------------------------------------------------------------------
+inline uint8_t MiYALAB::STM32F303K8::USART_UartMode::Receive(uint8_t *Str, uint16_t Size, uint16_t TimeOut)
+{
+	return HAL_UART_Receive(&hUart, Str, Size, TimeOut);
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART Uart Mode スーパークラス　Transmit関数
+// *C : 送信文字
+// TimeOut: タイムアウト時間
+//--------------------------------------------------------------------------------------------
+inline uint8_t MiYALAB::STM32F303K8::USART_UartMode::Transmit(uint8_t C, uint16_t TimeOut)
+{
+	return HAL_UART_Transmit(&hUart, &C, 1, TimeOut);
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// USART Uart Mode スーパークラス　Transmit関数
+// *Str : 送信文字列
+// Size : Sｔｒのデータサイズ
+// TimeOut: タイムアウト時間
+//--------------------------------------------------------------------------------------------
+inline uint8_t MiYALAB::STM32F303K8::USART_UartMode::Transmit(uint8_t *Str, uint16_t Size, uint16_t TimeOut)
+{
+	return HAL_UART_Transmit(&hUart, Str, Size, TimeOut);
+}
+
 #endif /* SRC_MIYALAB_STM32F303K8_USART_UART_H_ */
 
 //------------------------------------------------------------------------------
 // end of file
 //------------------------------------------------------------------------------
+/*
+ * 2020.12.01 : ファイル作成
+ */

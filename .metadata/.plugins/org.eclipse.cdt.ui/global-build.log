@@ -2205,3 +2205,577 @@ arm-none-eabi-size "nucleo32_f303k8.elf"
    text	   data	    bss	    dec	    hex	filename
    5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
  
+01:53:48 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 
+01:57:36 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 
+01:58:49 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 
+01:59:36 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp: In function 'void __io_putchar(uint8_t)':
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:80:24: error: 'USART_PutChar' is not a member of 'MiYALAB::STM32F303K8'
+  MiYALAB::STM32F303K8::USART_PutChar(ch);
+                        ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:80:24: note: suggested alternative: 'PutChar'
+  MiYALAB::STM32F303K8::USART_PutChar(ch);
+                        ^~~~~~~~~~~~~
+                        PutChar
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp: In function 'int __io_getchar()':
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:93:53: error: 'USART_GetChar' is not a member of 'MiYALAB::STM32F303K8'
+   Status = (HAL_StatusTypeDef)MiYALAB::STM32F303K8::USART_GetChar(&Data);
+                                                     ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:93:53: note: suggested alternative: 'GetChar'
+   Status = (HAL_StatusTypeDef)MiYALAB::STM32F303K8::USART_GetChar(&Data);
+                                                     ^~~~~~~~~~~~~
+                                                     GetChar
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:97:24: error: 'USART_EchoBack' is not a member of 'MiYALAB::STM32F303K8'
+  MiYALAB::STM32F303K8::USART_EchoBack(Data);
+                        ^~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:97:24: note: suggested alternative: 'EchoBack'
+  MiYALAB::STM32F303K8::USART_EchoBack(Data);
+                        ^~~~~~~~~~~~~~
+                        EchoBack
+Drivers/MiYALAB_STM32F303K8/USART/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o' failed
+make: *** [Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+01:59:44 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp: In function 'void __io_putchar(uint8_t)':
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:80:24: error: 'USART_PutChar' is not a member of 'MiYALAB::STM32F303K8'
+  MiYALAB::STM32F303K8::USART_PutChar(ch);
+                        ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp:80:24: note: suggested alternative: 'PutChar'
+  MiYALAB::STM32F303K8::USART_PutChar(ch);
+                        ^~~~~~~~~~~~~
+                        PutChar
+Drivers/MiYALAB_STM32F303K8/USART/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o' failed
+make: *** [Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o] Error 1
+01:59:49 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5260	     28	   1704	   6992	   1b50	nucleo32_f303k8.elf
+ 
+02:00:28 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:05:55 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/Calculator.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/Calculator.d" -MT"Drivers/MiYALAB_STM32F303K8/Calculator.o" -o "Drivers/MiYALAB_STM32F303K8/Calculator.o" "../Drivers/MiYALAB_STM32F303K8/Calculator.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/Calculator.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Finished building: ../Core/Src/main.cpp
+ 
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8916	    128	   1852	  10896	   2a90	nucleo32_f303k8.elf
+ 
+02:06:48 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	    128	   1852	  11472	   2cd0	nucleo32_f303k8.elf
+ 
+02:07:11 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+02:07:25 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:10:26 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Timer.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/Calculator.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Timer.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Timer.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Timer.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Timer.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/Calculator.d" -MT"Drivers/MiYALAB_STM32F303K8/Calculator.o" -o "Drivers/MiYALAB_STM32F303K8/Calculator.o" "../Drivers/MiYALAB_STM32F303K8/Calculator.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/Calculator.cpp
+ 
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Timer.cpp
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/UsartCommon.cpp
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+ 
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+02:13:43 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F303K8/USART/Uart.o" -o "Drivers/MiYALAB_STM32F303K8/USART/Uart.o" "../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/USART/Uart.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:34:42 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp: In member function 'uint8_t MiYALAB::STM32F303K8::TIM1_PwmMode::Enable(uint8_t)':
+../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp:126:10: warning: unused variable 'Ret' [-Wunused-variable]
+  uint8_t Ret = HAL_OK;
+          ^~~
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:34:49 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:38:02 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:39:57 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:40:33 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:46:14 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+08:58:38 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+09:07:34 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+09:09:06 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+09:09:37 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+09:09:45 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
+09:13:27 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j4 all 
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+Building file: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo32_f303k8\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F303x8 -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/MiYALAB_STM32F303K8" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo32_f303k8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F303K8/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Encoder.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F303K8/TIM/Pwm.cpp
+ 
+Building target: nucleo32_f303k8.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303K8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo32_f303k8.elf" @"objects.list"   -lm
+Finished building target: nucleo32_f303k8.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo32_f303k8.elf" "nucleo32_f303k8.hex"
+arm-none-eabi-size "nucleo32_f303k8.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10316	    128	   1852	  12296	   3008	nucleo32_f303k8.elf
+ 
