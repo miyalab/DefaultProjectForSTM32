@@ -41,7 +41,7 @@ MiYALAB::STM32F446RE::ADC_Mode::~ADC_Mode()
 {
 	HAL_ADC_Stop(&hAdc);
 	HAL_ADC_DeInit(&hAdc);
-	__HAL_RCC_ADC1_CLK_ENABLE();
+	__HAL_RCC_ADC1_CLK_DISABLE();
 }
 
 //------------------------------------------------------------------------------
