@@ -31,7 +31,7 @@
 #define MIYALAB_STM32F303K8_ADC_ADC_H_
 
 //--------------------------
-// TIM機能使用許可
+// ADC機能使用許可
 //--------------------------
 #define HAL_ADC_MODULE_ENABLED
 

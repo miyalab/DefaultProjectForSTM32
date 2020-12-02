@@ -61,8 +61,7 @@ uint8_t MiYALAB::STM32F303K8::ADC_Mode::Init(uint32_t Resolution)
 	__HAL_RCC_ADC1_CLK_ENABLE();
 	__HAL_RCC_ADC2_CLK_ENABLE();
 
-	// ADC1設定
-	hAdc.Instance = ADC1;
+	// ADC設定
 	hAdc.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
 	hAdc.Init.Resolution = Resolution;
 	hAdc.Init.ScanConvMode = DISABLE;
@@ -78,10 +77,12 @@ uint8_t MiYALAB::STM32F303K8::ADC_Mode::Init(uint32_t Resolution)
 	hAdc.Init.Overrun = ADC_OVR_DATA_OVERWRITTEN;
 
 	// ADC1設定 適用
+	hAdc.Instance = ADC1;
 	if(HAL_ADC_Init(&hAdc) != HAL_OK){
 		return HAL_ERROR;
 	}
 
+	// ADC2設定 適用
 	hAdc.Instance = ADC2;
 	if(HAL_ADC_Init(&hAdc) != HAL_OK){
 		return HAL_ERROR;
