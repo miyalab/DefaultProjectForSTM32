@@ -15,9 +15,9 @@
 #include "stm32f4xx.h"
 
 #include "MiYALAB_STM32F446RE.h"
-#include "MiYALAB_STM32F446RE_ADC.h"
-#include "MiYALAB_STM32F446RE_TIM.h"
-#include "MiYALAB_STM32F446RE_USART.h"
+#include "ADC/MiYALAB_STM32F446RE_ADC.h"
+#include "TIM/MiYALAB_STM32F446RE_TIM.h"
+#include "USART/MiYALAB_STM32F446RE_USART.h"
 
 //--------------------------
 // シンボル定義
