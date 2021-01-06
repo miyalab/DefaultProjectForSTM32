@@ -1030,3 +1030,127 @@ arm-none-eabi-size "nucleo64_f446re.elf"
    text	   data	    bss	    dec	    hex	filename
    9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
  
+13:09:38 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:09:38 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Building file: ../Drivers/MiYALAB_STM32F446RE/SPI/Slave.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU G++ Compiler
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/Uart.o" -o "Drivers/MiYALAB_STM32F446RE/USART/Uart.o" "../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+Building file: ../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Timer.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/SPI/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/SPI/Master.o" -o "Drivers/MiYALAB_STM32F446RE/SPI/Master.o" "../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU G++ Compiler
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/SPI/Slave.d" -MT"Drivers/MiYALAB_STM32F446RE/SPI/Slave.o" -o "Drivers/MiYALAB_STM32F446RE/SPI/Slave.o" "../Drivers/MiYALAB_STM32F446RE/SPI/Slave.cpp"
+Building file: ../Core/Src/main.cpp
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU G++ Compiler
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/ADC/Adc.d" -MT"Drivers/MiYALAB_STM32F446RE/ADC/Adc.o" -o "Drivers/MiYALAB_STM32F446RE/ADC/Adc.o" "../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp: In function 'void MiYALAB::STM32F446RE::USART_stdioEnable()':
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:46:9: error: 'stdout' was not declared in this scope
+  setbuf(stdout, NULL);
+         ^~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:46:9: note: suggested alternative: 'short'
+  setbuf(stdout, NULL);
+         ^~~~~~
+         short
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:46:2: error: 'setbuf' was not declared in this scope
+  setbuf(stdout, NULL);
+  ^~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:47:9: error: 'stdin' was not declared in this scope
+  setbuf(stdin, NULL);
+         ^~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:47:9: note: suggested alternative: 'static'
+  setbuf(stdin, NULL);
+         ^~~~~
+         static
+make: *** [Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o] Error 1
+Drivers/MiYALAB_STM32F446RE/USART/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o' failed
+make: *** Waiting for unfinished jobs....
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+Finished building: ../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/SPI/Slave.cpp
+ 
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+13:09:52 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:09:53 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+13:12:57 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:12:58 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/Uart.o" -o "Drivers/MiYALAB_STM32F446RE/USART/Uart.o" "../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+C:\Users\miyak\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyak/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
