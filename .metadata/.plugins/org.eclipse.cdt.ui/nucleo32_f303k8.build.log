@@ -1,6 +1,6 @@
-13:12:57 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+20:55:36 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
 make -j8 all 
 make: Nothing to be done for 'all'.
 
-13:12:57 Build Finished (took 494ms)
+20:55:37 Build Finished (took 467ms)
 

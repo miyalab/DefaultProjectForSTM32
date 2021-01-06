@@ -62,7 +62,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		class TIM_EncoderMode{
 		public:
-			uint8_t Init(uint16_t Divide);
+			uint8_t Init(uint16_t Divide, uint32_t Mode);
 			int16_t Read();
 			void Clear();
 		protected:

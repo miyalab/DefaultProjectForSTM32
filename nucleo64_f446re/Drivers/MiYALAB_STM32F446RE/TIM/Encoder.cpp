@@ -34,6 +34,58 @@
 
 //--------------------------------------------------------------------------------------------
 // MiYA LAB OSS
+// TIM Encoder Mode スーパークラス　Init関数
+// Mode : TIM_ENCODERMODE_TI1  A相のみ
+//        TIM_ENCODERMODE_TI2  B相のみ
+//        TIM_ENCODERMODE_TI12 AB相
+// count　= パルス数 / Divide
+// return : 0(正常)
+//			otherwise(エラー)
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::TIM_EncoderMode::Init(uint16_t Divide, uint32_t Mode)
+{
+	// ハードウェア設定用データ群
+	TIM_Encoder_InitTypeDef Config ={0};
+	TIM_MasterConfigTypeDef MasterConfig = {0};
+
+	// TIM設定
+	hTim.Init.Prescaler = Divide;
+	hTim.Init.CounterMode = TIM_COUNTERMODE_UP;
+	hTim.Init.Period = MiYALAB::STM32F446RE::TIM::ENCODER_MAX;
+	hTim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	hTim.Init.RepetitionCounter = 0;
+	hTim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+
+	// TIM設定(エンコーダモード)
+	Config.EncoderMode = Mode;
+	Config.IC1Polarity = TIM_ICPOLARITY_RISING;
+	Config.IC1Selection = TIM_ICSELECTION_DIRECTTI;
+	Config.IC1Prescaler = TIM_ICPSC_DIV1;
+	Config.IC1Filter = 0;
+	Config.IC2Polarity = TIM_ICPOLARITY_RISING;
+	Config.IC2Selection = TIM_ICSELECTION_DIRECTTI;
+	Config.IC2Prescaler = TIM_ICPSC_DIV1;
+	Config.IC2Filter = 0;
+
+	// TIM設定(エンコーダモード)　適用
+	if(HAL_TIM_Encoder_Init(&hTim, &Config) != HAL_OK){
+		return HAL_ERROR;
+	}
+
+	// TIM マスター設定
+	MasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+	MasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+
+	// TIM マスター設定適用
+	if(HAL_TIMEx_MasterConfigSynchronization(&hTim, &MasterConfig) != HAL_OK){
+		return HAL_ERROR;
+	}
+
+	return HAL_OK;
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
 // TIM1 Encoder Mode クラス　コンストラクタ
 // TIM1_CLK 開始
 //--------------------------------------------------------------------------------------------
