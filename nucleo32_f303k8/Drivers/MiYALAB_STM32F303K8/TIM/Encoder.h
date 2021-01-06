@@ -103,7 +103,7 @@ namespace MiYALAB{
 
 //--------------------------------------------------------------------------------------------
 // MiYA LAB OSS
-// TIM Encoder Mode スーパークラス　Clear関数
+// TIM Encoder Mode スーパークラス Clear関数
 // パルス係数初期化
 //--------------------------------------------------------------------------------------------
 inline void MiYALAB::STM32F303K8::TIM_EncoderMode::Clear()
@@ -113,7 +113,7 @@ inline void MiYALAB::STM32F303K8::TIM_EncoderMode::Clear()
 
 //--------------------------------------------------------------------------------------------
 // MiYA LAB OSS
-// TIM Encoder Mode スーパークラス　Encode関数
+// TIM Encoder Mode スーパークラス Read関数
 // return : パルス数
 //--------------------------------------------------------------------------------------------
 inline int16_t MiYALAB::STM32F303K8::TIM_EncoderMode::Read()

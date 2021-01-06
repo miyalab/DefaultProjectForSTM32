@@ -1,0 +1,17 @@
+/*
+ * encoder.h
+ *
+ *  Created on: 2021/01/06
+ *      Author: miyak
+ */
+
+#ifndef MIYALAB_STM32F446RE_TIM_ENCODER_H_
+#define MIYALAB_STM32F446RE_TIM_ENCODER_H_
+
+class encoder {
+public:
+	encoder();
+	virtual ~encoder();
+};
+
+#endif /* MIYALAB_STM32F446RE_TIM_ENCODER_H_ */

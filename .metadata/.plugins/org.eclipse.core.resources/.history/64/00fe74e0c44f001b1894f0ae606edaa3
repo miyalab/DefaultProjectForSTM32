@@ -1,0 +1,17 @@
+/*
+ * Timer.h
+ *
+ *  Created on: 2021/01/06
+ *      Author: miyak
+ */
+
+#ifndef MIYALAB_STM32F446RE_TIM_TIMER_H_
+#define MIYALAB_STM32F446RE_TIM_TIMER_H_
+
+class Timer {
+public:
+	Timer();
+	virtual ~Timer();
+};
+
+#endif /* MIYALAB_STM32F446RE_TIM_TIMER_H_ */

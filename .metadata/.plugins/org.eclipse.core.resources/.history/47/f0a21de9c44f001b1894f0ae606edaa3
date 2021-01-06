@@ -1,0 +1,37 @@
+/*
+ * Timer.h
+ *
+ *  Created on: 2021/01/06
+ *      Author: miyak
+ */
+
+#ifndef MIYALAB_STM32F446RE_TIM_TIMER_H_
+#define MIYALAB_STM32F446RE_TIM_TIMER_H_
+
+//--------------------------
+// TIM機能使用許可
+//--------------------------
+#define HAL_TIM_MODULE_ENABLED
+
+//--------------------------
+// インクルード
+//--------------------------
+#include "stm32f4xx.h"
+#include "stm32f4xx_hal_tim.h"
+
+//--------------------------
+// プロトタイプ宣言
+//--------------------------
+extern "C"{
+	void TIM6_DAC_IRQHandler(void);
+	void TIM7_IRQHandler(void);
+}
+
+
+class Timer {
+public:
+	Timer();
+	virtual ~Timer();
+};
+
+#endif /* MIYALAB_STM32F446RE_TIM_TIMER_H_ */

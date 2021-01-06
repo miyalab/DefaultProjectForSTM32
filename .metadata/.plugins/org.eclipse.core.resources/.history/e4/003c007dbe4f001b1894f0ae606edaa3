@@ -1,0 +1,18 @@
+/*
+ * UsartCommon.cpp
+ *
+ *  Created on: 2021/01/06
+ *      Author: miyak
+ */
+
+#include <USART/UsartCommon.h>
+
+UsartCommon::UsartCommon() {
+	// TODO 自動生成されたコンストラクター・スタブ
+
+}
+
+UsartCommon::~UsartCommon() {
+	// TODO Auto-generated destructor stub
+}
+
