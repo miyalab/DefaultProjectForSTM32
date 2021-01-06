@@ -21,12 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File   : Timer.h
+ * File   : Timer.cpp
  * Author : K.Miyauchi
  *
  * Version : 1.00
  */
 
+//--------------------------
+// インクルード
+//--------------------------
 #include <TIM/Timer.h>
 
 //--------------------------
@@ -198,3 +201,7 @@ void TIM7_IRQHandler(void)
 
 	MiYALAB::STM32F446RE::TIM7_InterruptFunction();
 }
+
+//------------------------------------------------------------------------------
+// end of file
+//------------------------------------------------------------------------------

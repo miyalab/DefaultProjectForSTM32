@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <Calculator.h>
 #include <ADC/Adc.h>
-#include <TIM/Pwm.h>
+#include <TIM/Timer.h>
 #include <USART/Uart.h>
 #include "stm32f4xx.h"
 

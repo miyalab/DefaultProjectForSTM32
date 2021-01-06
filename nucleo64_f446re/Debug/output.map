@@ -658,14 +658,12 @@ Discarded input sections
  .bss           0x00000000        0x0 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .text._ZN7MiYALAB11STM32F446RE14SPI_MasterMode4InitEmmm
                 0x00000000       0x32 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .text._ZN7MiYALAB11STM32F446RE13SPI_SlaveMode4InitEmm
-                0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_info    0x00000000      0x85f Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_abbrev  0x00000000      0x20d Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_loc     0x00000000      0x10b Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_info    0x00000000      0x793 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_abbrev  0x00000000      0x1fe Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_loc     0x00000000       0x9c Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .debug_aranges
-                0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_ranges  0x00000000       0x18 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+                0x00000000       0x20 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_ranges  0x00000000       0x10 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .debug_macro   0x00000000      0x1ff Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .debug_macro   0x00000000      0xb2c Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .debug_macro   0x00000000       0x10 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
@@ -712,12 +710,126 @@ Discarded input sections
  .debug_macro   0x00000000       0x4d Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .debug_macro   0x00000000      0x287 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .debug_macro   0x00000000      0x126 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_line    0x00000000      0x841 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_str     0x00000000    0xce371 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_line    0x00000000      0x823 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_str     0x00000000    0xce2f3 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .comment       0x00000000       0x80 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
- .debug_frame   0x00000000       0x44 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .debug_frame   0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/SPI/Master.o
  .ARM.attributes
                 0x00000000       0x39 Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .text          0x00000000        0x0 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .data          0x00000000        0x0 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .bss           0x00000000        0x0 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .text._ZN7MiYALAB11STM32F446RE13SPI_SlaveMode4InitEmm
+                0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .text._ZN7MiYALAB11STM32F446RE14SPI3_SlaveModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .text._ZN7MiYALAB11STM32F446RE14SPI3_SlaveModeD2Ev
+                0x00000000       0x1c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .text._ZN7MiYALAB11STM32F446RE14SPI3_SlaveMode6EnableEv
+                0x00000000       0x74 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_info    0x00000000      0xc63 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_abbrev  0x00000000      0x2f8 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_loc     0x00000000       0xb9 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_aranges
+                0x00000000       0x38 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_ranges  0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x1ff Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0xb2c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x10 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x2e Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x1c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x22 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x8e Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x51 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0xef Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x6a Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x1df Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x1c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x22 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0xdf Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000     0x102d Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x11f Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000    0x1672d Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x43 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x2a0 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000     0x3659 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x17b Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x5a Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0xc90 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x9fe Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x117 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x1a0 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x27 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x16d Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x287 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x5f Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x236 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x391 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x17d Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0xf9 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x132 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x29c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x2e Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x11a Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0xe8 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x89 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x225 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x8a0 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000       0x4d Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x287 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_macro   0x00000000      0x126 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_line    0x00000000      0x865 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_str     0x00000000    0xce5dc Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .comment       0x00000000       0x80 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .debug_frame   0x00000000       0x7c Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
+ .ARM.attributes
+                0x00000000       0x39 Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
  .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o
  .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o
  .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o
@@ -910,12 +1022,54 @@ Discarded input sections
  .bss           0x00000000        0x0 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .text._ZN7MiYALAB11STM32F446RE11TIM_PwmMode4InitEtt
                 0x00000000       0x88 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_info    0x00000000      0x995 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_abbrev  0x00000000      0x26b Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_loc     0x00000000       0x60 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM1_PwmModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM1_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM1_PwmMode6EnableEh
+                0x00000000      0x150 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM2_PwmModeC2Ev
+                0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM2_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM2_PwmMode6EnableEh
+                0x00000000      0x150 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM3_PwmModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM3_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM3_PwmMode6EnableEh
+                0x00000000      0x148 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM4_PwmModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM4_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM4_PwmMode6EnableEh
+                0x00000000      0x14c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM5_PwmModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM5_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM5_PwmMode6EnableEh
+                0x00000000      0x148 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM8_PwmModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM8_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE12TIM8_PwmMode6EnableEh
+                0x00000000      0x14c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE13TIM12_PwmModeC2Ev
+                0x00000000       0x2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE13TIM12_PwmModeD2Ev
+                0x00000000       0x24 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .text._ZN7MiYALAB11STM32F446RE13TIM12_PwmMode6EnableEh
+                0x00000000       0xc4 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_info    0x00000000     0x25b1 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_abbrev  0x00000000      0x3b7 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_loc     0x00000000      0x5fb Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .debug_aranges
-                0x00000000       0x20 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_ranges  0x00000000       0x10 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+                0x00000000       0xc8 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_ranges  0x00000000       0xb8 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .debug_macro   0x00000000      0x1ff Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .debug_macro   0x00000000      0xb2c Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .debug_macro   0x00000000       0x10 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
@@ -962,10 +1116,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x4d Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .debug_macro   0x00000000      0x287 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .debug_macro   0x00000000      0x126 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_line    0x00000000      0x839 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_str     0x00000000    0xce551 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_line    0x00000000      0xaf1 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_str     0x00000000    0xcef2f Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .comment       0x00000000       0x80 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
- .debug_frame   0x00000000       0x38 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
+ .debug_frame   0x00000000      0x284 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .ARM.attributes
                 0x00000000       0x39 Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
  .group         0x00000000        0xc Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
@@ -1022,6 +1176,7 @@ Discarded input sections
  .text._ZN7MiYALAB11STM32F446RE22TIM7_InterruptFunctionEv
                 0x00000000        0x2 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
  .debug_macro   0x00000000      0xb2c Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
+ .debug_macro   0x00000000       0x10 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
  .debug_macro   0x00000000       0x2e Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
  .debug_macro   0x00000000       0x28 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
  .debug_macro   0x00000000       0x1c Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
@@ -8887,6 +9042,7 @@ LOAD Core/Src/system_stm32f4xx.o
 LOAD Drivers/MiYALAB_STM32F446RE/ADC/Adc.o
 LOAD Drivers/MiYALAB_STM32F446RE/Calculator.o
 LOAD Drivers/MiYALAB_STM32F446RE/SPI/Master.o
+LOAD Drivers/MiYALAB_STM32F446RE/SPI/Slave.o
 LOAD Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o
 LOAD Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o
 LOAD Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
@@ -9661,23 +9817,23 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x00000926       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(nucleo64_f446re.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x10484
- .debug_info    0x00000000     0x1e6a Core/Src/main.o
- .debug_info    0x00001e6a      0x223 Core/Src/stm32f4xx_it.o
- .debug_info    0x0000208d      0xfd3 Core/Src/syscalls.o
- .debug_info    0x00003060      0x58d Core/Src/system_stm32f4xx.o
- .debug_info    0x000035ed     0x1088 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
- .debug_info    0x00004675     0x1ee2 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
- .debug_info    0x00006557      0xa43 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_info    0x00006f9a      0xfaa Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_info    0x00007f44      0x810 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_info    0x00008754      0x825 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_info    0x00008f79      0xad4 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
- .debug_info    0x00009a4d      0xc34 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_info    0x0000a681     0x31db Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
- .debug_info    0x0000d85c     0x14e9 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
- .debug_info    0x0000ed45     0x171d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_info    0x00010462       0x22 startup/startup_stm32f446xx.o
+.debug_info     0x00000000    0x1041e
+ .debug_info    0x00000000     0x1e04 Core/Src/main.o
+ .debug_info    0x00001e04      0x223 Core/Src/stm32f4xx_it.o
+ .debug_info    0x00002027      0xfd3 Core/Src/syscalls.o
+ .debug_info    0x00002ffa      0x58d Core/Src/system_stm32f4xx.o
+ .debug_info    0x00003587     0x1088 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
+ .debug_info    0x0000460f     0x1ee2 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
+ .debug_info    0x000064f1      0xa43 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_info    0x00006f34      0xfaa Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_info    0x00007ede      0x810 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_info    0x000086ee      0x825 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+ .debug_info    0x00008f13      0xad4 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_info    0x000099e7      0xc34 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_info    0x0000a61b     0x31db Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_info    0x0000d7f6     0x14e9 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_info    0x0000ecdf     0x171d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+ .debug_info    0x000103fc       0x22 startup/startup_stm32f446xx.o
 
 .debug_abbrev   0x00000000     0x2541
  .debug_abbrev  0x00000000      0x4ff Core/Src/main.o
@@ -9765,7 +9921,7 @@ OUTPUT(nucleo64_f446re.elf elf32-littlearm)
  .debug_ranges  0x00000ae8      0x1c0 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
  .debug_ranges  0x00000ca8       0x20 startup/startup_stm32f446xx.o
 
-.debug_macro    0x00000000    0x255c1
+.debug_macro    0x00000000    0x255b1
  .debug_macro   0x00000000      0x383 Core/Src/main.o
  .debug_macro   0x00000383      0xb2c Core/Src/main.o
  .debug_macro   0x00000eaf       0x22 Core/Src/main.o
@@ -9869,70 +10025,69 @@ OUTPUT(nucleo64_f446re.elf elf32-littlearm)
  .debug_macro   0x00023b72       0x88 Core/Src/syscalls.o
  .debug_macro   0x00023bfa      0x1f7 Core/Src/system_stm32f4xx.o
  .debug_macro   0x00023df1      0x1ff Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
- .debug_macro   0x00023ff0       0x10 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
- .debug_macro   0x00024000      0x354 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
+ .debug_macro   0x00023ff0      0x354 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
+ .debug_macro   0x00024344       0x10 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
  .debug_macro   0x00024354       0x10 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
- .debug_macro   0x00024364       0x10 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
- .debug_macro   0x00024374      0x251 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_macro   0x000245c5      0x1f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_macro   0x000247b6      0x227 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_macro   0x000249dd      0x209 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_macro   0x00024be6      0x215 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
- .debug_macro   0x00024dfb      0x1f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_macro   0x00024fec      0x1f2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
- .debug_macro   0x000251de      0x1f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
- .debug_macro   0x000253cf      0x1f2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+ .debug_macro   0x00024364      0x251 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_macro   0x000245b5      0x1f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_macro   0x000247a6      0x227 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_macro   0x000249cd      0x209 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+ .debug_macro   0x00024bd6      0x215 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_macro   0x00024deb      0x1f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_macro   0x00024fdc      0x1f2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_macro   0x000251ce      0x1f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_macro   0x000253bf      0x1f2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
 
-.debug_line     0x00000000     0xa950
- .debug_line    0x00000000      0xba9 Core/Src/main.o
- .debug_line    0x00000ba9      0x822 Core/Src/stm32f4xx_it.o
- .debug_line    0x000013cb      0x5d6 Core/Src/syscalls.o
- .debug_line    0x000019a1      0x7c2 Core/Src/system_stm32f4xx.o
- .debug_line    0x00002163      0x8c0 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
- .debug_line    0x00002a23      0xb1e Drivers/MiYALAB_STM32F446RE/USART/Uart.o
- .debug_line    0x00003541      0x99f Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_line    0x00003ee0      0x9f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_line    0x000048d1      0x91d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_line    0x000051ee      0x88a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_line    0x00005a78      0xa32 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
- .debug_line    0x000064aa      0xbd6 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_line    0x00007080     0x198a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
- .debug_line    0x00008a0a      0xdda Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
- .debug_line    0x000097e4     0x10ee Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_line    0x0000a8d2       0x7e startup/startup_stm32f446xx.o
+.debug_line     0x00000000     0xa952
+ .debug_line    0x00000000      0xbab Core/Src/main.o
+ .debug_line    0x00000bab      0x822 Core/Src/stm32f4xx_it.o
+ .debug_line    0x000013cd      0x5d6 Core/Src/syscalls.o
+ .debug_line    0x000019a3      0x7c2 Core/Src/system_stm32f4xx.o
+ .debug_line    0x00002165      0x8c0 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
+ .debug_line    0x00002a25      0xb1e Drivers/MiYALAB_STM32F446RE/USART/Uart.o
+ .debug_line    0x00003543      0x99f Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_line    0x00003ee2      0x9f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_line    0x000048d3      0x91d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_line    0x000051f0      0x88a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+ .debug_line    0x00005a7a      0xa32 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_line    0x000064ac      0xbd6 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_line    0x00007082     0x198a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_line    0x00008a0c      0xdda Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_line    0x000097e6     0x10ee Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+ .debug_line    0x0000a8d4       0x7e startup/startup_stm32f446xx.o
 
-.debug_str      0x00000000    0xd73d8
- .debug_str     0x00000000    0xd2506 Core/Src/main.o
-                              0xd2a64 (size before relaxing)
- .debug_str     0x000d2506      0x2a7 Core/Src/stm32f4xx_it.o
+.debug_str      0x00000000    0xd73b0
+ .debug_str     0x00000000    0xd2500 Core/Src/main.o
+                              0xd2a36 (size before relaxing)
+ .debug_str     0x000d2500      0x2a7 Core/Src/stm32f4xx_it.o
                               0xcd93d (size before relaxing)
- .debug_str     0x000d27ad     0x13c9 Core/Src/syscalls.o
+ .debug_str     0x000d27a7     0x13c9 Core/Src/syscalls.o
                                0x85bc (size before relaxing)
- .debug_str     0x000d3b76       0xc4 Core/Src/system_stm32f4xx.o
+ .debug_str     0x000d3b70       0xc4 Core/Src/system_stm32f4xx.o
                               0xcda59 (size before relaxing)
- .debug_str     0x000d3c3a      0x9ba Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
+ .debug_str     0x000d3c34      0x998 Drivers/MiYALAB_STM32F446RE/TIM/Timer.o
                               0xcecf5 (size before relaxing)
- .debug_str     0x000d45f4      0x598 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
+ .debug_str     0x000d45cc      0x598 Drivers/MiYALAB_STM32F446RE/USART/Uart.o
                               0xd2a32 (size before relaxing)
- .debug_str     0x000d4b8c      0x580 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_str     0x000d4b64      0x580 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
                               0xce5ac (size before relaxing)
- .debug_str     0x000d510c      0x31a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_str     0x000d50e4      0x31a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
                               0xce331 (size before relaxing)
- .debug_str     0x000d5426      0x1de Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_str     0x000d53fe      0x1de Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
                               0xcdc98 (size before relaxing)
- .debug_str     0x000d5604      0x135 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+ .debug_str     0x000d55dc      0x135 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
                               0xcdc48 (size before relaxing)
- .debug_str     0x000d5739      0x25c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_str     0x000d5711      0x25c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
                               0xcde72 (size before relaxing)
- .debug_str     0x000d5995      0x31c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_str     0x000d596d      0x31c Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
                               0xcdeb6 (size before relaxing)
- .debug_str     0x000d5cb1      0xd68 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_str     0x000d5c89      0xd68 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
                               0xceb93 (size before relaxing)
- .debug_str     0x000d6a19      0x472 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_str     0x000d69f1      0x472 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
                               0xce3ab (size before relaxing)
- .debug_str     0x000d6e8b      0x51e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+ .debug_str     0x000d6e63      0x51e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
                               0xce2f7 (size before relaxing)
- .debug_str     0x000d73a9       0x2f startup/startup_stm32f446xx.o
+ .debug_str     0x000d7381       0x2f startup/startup_stm32f446xx.o
                                  0x7c (size before relaxing)
 
 .comment        0x00000000       0x7f

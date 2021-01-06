@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File  : MiYALAB_STM32F446RE_ADC.cpp
+ * File  : Adc.cpp
  * Author: K.Miyauchi
  *
  * Version : 1.01

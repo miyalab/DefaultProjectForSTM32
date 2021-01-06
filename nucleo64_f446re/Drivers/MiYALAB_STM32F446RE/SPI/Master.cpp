@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * File   : MiYALAB_STM32F446RE_SPI.cpp
+ * File   : Master.cpp
  * Author : K.Miyauchi
  *
  * Version : 1.00
@@ -71,32 +71,43 @@ uint8_t MiYALAB::STM32F446RE::SPI_MasterMode::Init(uint32_t Prescaler, uint32_t 
 
 //--------------------------------------------------------------------------------------------
 // MiYA LAB OSS
-// SPI Slave Mode スーパークラス　Init関数
-// DataSize  : SPI_DATASIZE_8BIT
-//             SPI_DATASIZE_16BIT
-// FirstBit  : SPI_FIRSTBIT_MSB
-//             SPI_FIRSTBIT_LSB
-// return : 0(正常)
-//			other wise(エラー)
+// SPI3 Master Mode クラス コンストラクタ
 //--------------------------------------------------------------------------------------------
-uint8_t MiYALAB::STM32F446RE::SPI_SlaveMode::Init(uint32_t DataSize, uint32_t FirstBit)
+MiYALAB::STM32F446RE::SPI3_MasterMode::SPI3_MasterMode()
 {
-	// SPI設定
-	hSpi.Init.Mode = SPI_MODE_SLAVE;
-	hSpi.Init.Direction = SPI_DIRECTION_2LINES;
-	hSpi.Init.DataSize = DataSize;
-	hSpi.Init.CLKPolarity = SPI_POLARITY_LOW;
-	hSpi.Init.CLKPhase = SPI_PHASE_1EDGE;
-	hSpi.Init.NSS = SPI_NSS_HARD_INPUT;
-	hSpi.Init.FirstBit = FirstBit;
-	hSpi.Init.TIMode = SPI_TIMODE_DISABLE;
-	hSpi.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-	hSpi.Init.CRCPolynomial = 10;
+	__HAL_RCC_SPI3_CLK_ENABLE();
+	hSpi.Instance = SPI3;
+}
 
-	//　SPI設定適用
-	if(HAL_SPI_Init(&hSpi) != HAL_OK) {
-		return HAL_ERROR;
-	}
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// SPI3 Master Mode クラス デストラクタ
+//--------------------------------------------------------------------------------------------
+MiYALAB::STM32F446RE::SPI3_MasterMode::~SPI3_MasterMode()
+{
+	HAL_SPI_DeInit(&hSpi);
+	__HAL_RCC_SPI3_CLK_DISABLE();
+}
+
+//--------------------------------------------------------------------------------------------
+// MiYA LAB OSS
+// SPI3 Master Mode クラス Enable関数
+//--------------------------------------------------------------------------------------------
+uint8_t MiYALAB::STM32F446RE::SPI3_MasterMode::Enable()
+{
+	// ハードウェア設定用データ群
+	GPIO_InitTypeDef GpioInitStruct = {0};
+
+	// クロック許可
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+
+	// GPIO設定
+	GpioInitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12;
+	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
+	GpioInitStruct.Pull = GPIO_NOPULL;
+	GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GpioInitStruct.Alternate = GPIO_AF6_SPI3;
+	HAL_GPIO_Init(GPIOC, &GpioInitStruct);
 
 	return HAL_OK;
 }
