@@ -90,14 +90,14 @@ int __io_getchar(void)
 	HAL_StatusTypeDef Status = HAL_BUSY;
 
 	// 1文字受信
-	while(Status != HAL_OK){
-		Status = (HAL_StatusTypeDef)MiYALAB::STM32F446RE::USART_GetChar(&Data);
+	while (Status != HAL_OK) {
+		Status = (HAL_StatusTypeDef) MiYALAB::STM32F446RE::USART_GetChar(&Data);
 	}
 
 	// コールバック
 	MiYALAB::STM32F446RE::USART_EchoBack(Data);
 
-	return(Data);
+	return (Data);
 }
 
 //------------------------------------------------------------------------------

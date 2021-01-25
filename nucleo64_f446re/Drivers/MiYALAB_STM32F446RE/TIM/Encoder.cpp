@@ -45,8 +45,8 @@
 uint8_t MiYALAB::STM32F446RE::TIM_EncoderMode::Init(uint16_t Divide, uint32_t Mode)
 {
 	// ハードウェア設定用データ群
-	TIM_Encoder_InitTypeDef Config ={0};
-	TIM_MasterConfigTypeDef MasterConfig = {0};
+	TIM_Encoder_InitTypeDef Config = { 0 };
+	TIM_MasterConfigTypeDef MasterConfig = { 0 };
 
 	// TIM設定
 	hTim.Init.Prescaler = Divide;
@@ -68,7 +68,7 @@ uint8_t MiYALAB::STM32F446RE::TIM_EncoderMode::Init(uint16_t Divide, uint32_t Mo
 	Config.IC2Filter = 0;
 
 	// TIM設定(エンコーダモード)　適用
-	if(HAL_TIM_Encoder_Init(&hTim, &Config) != HAL_OK){
+	if (HAL_TIM_Encoder_Init(&hTim, &Config) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -77,7 +77,7 @@ uint8_t MiYALAB::STM32F446RE::TIM_EncoderMode::Init(uint16_t Divide, uint32_t Mo
 	MasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
 
 	// TIM マスター設定適用
-	if(HAL_TIMEx_MasterConfigSynchronization(&hTim, &MasterConfig) != HAL_OK){
+	if (HAL_TIMEx_MasterConfigSynchronization(&hTim, &MasterConfig) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -115,7 +115,7 @@ MiYALAB::STM32F446RE::TIM1_EncoderMode::~TIM1_EncoderMode()
 uint8_t MiYALAB::STM32F446RE::TIM1_EncoderMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -131,10 +131,10 @@ uint8_t MiYALAB::STM32F446RE::TIM1_EncoderMode::Enable()
 	Clear();
 
 	// パルス入力許可
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK) {
 		return HAL_ERROR;
 	}
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -172,7 +172,7 @@ MiYALAB::STM32F446RE::TIM2_EncoderMode::~TIM2_EncoderMode()
 uint8_t MiYALAB::STM32F446RE::TIM2_EncoderMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -192,10 +192,10 @@ uint8_t MiYALAB::STM32F446RE::TIM2_EncoderMode::Enable()
 	Clear();
 
 	// パルス入力許可
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK) {
 		return HAL_ERROR;
 	}
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -233,7 +233,7 @@ MiYALAB::STM32F446RE::TIM3_EncoderMode::~TIM3_EncoderMode()
 uint8_t MiYALAB::STM32F446RE::TIM3_EncoderMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOB_CLK_ENABLE();
@@ -250,10 +250,10 @@ uint8_t MiYALAB::STM32F446RE::TIM3_EncoderMode::Enable()
 	Clear();
 
 	// パルス入力許可
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK) {
 		return HAL_ERROR;
 	}
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -291,7 +291,7 @@ MiYALAB::STM32F446RE::TIM4_EncoderMode::~TIM4_EncoderMode()
 uint8_t MiYALAB::STM32F446RE::TIM4_EncoderMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOB_CLK_ENABLE();
@@ -308,10 +308,10 @@ uint8_t MiYALAB::STM32F446RE::TIM4_EncoderMode::Enable()
 	Clear();
 
 	// パルス入力許可
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK) {
 		return HAL_ERROR;
 	}
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -349,7 +349,7 @@ MiYALAB::STM32F446RE::TIM5_EncoderMode::~TIM5_EncoderMode()
 uint8_t MiYALAB::STM32F446RE::TIM5_EncoderMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -366,10 +366,10 @@ uint8_t MiYALAB::STM32F446RE::TIM5_EncoderMode::Enable()
 	Clear();
 
 	// パルス入力許可
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK) {
 		return HAL_ERROR;
 	}
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -407,7 +407,7 @@ MiYALAB::STM32F446RE::TIM8_EncoderMode::~TIM8_EncoderMode()
 uint8_t MiYALAB::STM32F446RE::TIM8_EncoderMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -424,10 +424,10 @@ uint8_t MiYALAB::STM32F446RE::TIM8_EncoderMode::Enable()
 	Clear();
 
 	// パルス入力許可
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_1) != HAL_OK) {
 		return HAL_ERROR;
 	}
-	if(HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK){
+	if (HAL_TIM_Encoder_Start(&hTim, TIM_CHANNEL_2) != HAL_OK) {
 		return HAL_ERROR;
 	}
 

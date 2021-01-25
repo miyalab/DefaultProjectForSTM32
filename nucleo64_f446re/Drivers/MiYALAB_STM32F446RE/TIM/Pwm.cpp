@@ -42,8 +42,8 @@
 uint8_t MiYALAB::STM32F446RE::TIM_PwmMode::Init(uint16_t Divide, uint16_t Period)
 {
 	// ハードウェア設定用データ群
-	TIM_MasterConfigTypeDef MasterConfig = {0};
-	TIM_BreakDeadTimeConfigTypeDef BreakDeadTimeConfig = {0};
+	TIM_MasterConfigTypeDef MasterConfig = { 0 };
+	TIM_BreakDeadTimeConfigTypeDef BreakDeadTimeConfig = { 0 };
 
 	// TIM設定
 	hTim.Init.Prescaler = Divide - 1;
@@ -53,7 +53,7 @@ uint8_t MiYALAB::STM32F446RE::TIM_PwmMode::Init(uint16_t Divide, uint16_t Period
 	hTim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
 
 	// TIM設定適用 PWMモード
-	if(HAL_TIM_PWM_Init(&hTim) != HAL_OK){
+	if (HAL_TIM_PWM_Init(&hTim) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -62,12 +62,12 @@ uint8_t MiYALAB::STM32F446RE::TIM_PwmMode::Init(uint16_t Divide, uint16_t Period
 	MasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
 
 	// TIM マスタ設定適用
-	if(HAL_TIMEx_MasterConfigSynchronization(&hTim, &MasterConfig) != HAL_OK){
+	if (HAL_TIMEx_MasterConfigSynchronization(&hTim, &MasterConfig) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
 	// TIM1 or TIM8
-	if(hTim.Instance == TIM1 || hTim.Instance == TIM8){
+	if (hTim.Instance == TIM1 || hTim.Instance == TIM8) {
 		// TIM ブレーキデッドタイム設定
 		BreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
 		BreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
@@ -78,7 +78,7 @@ uint8_t MiYALAB::STM32F446RE::TIM_PwmMode::Init(uint16_t Divide, uint16_t Period
 		BreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
 
 		// TIM ブレーキデッドタイム設定適用
-		if(HAL_TIMEx_ConfigBreakDeadTime(&hTim, &BreakDeadTimeConfig) != HAL_OK){
+		if (HAL_TIMEx_ConfigBreakDeadTime(&hTim, &BreakDeadTimeConfig) != HAL_OK) {
 			return HAL_ERROR;
 		}
 	}
@@ -126,8 +126,8 @@ uint8_t MiYALAB::STM32F446RE::TIM1_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -142,44 +142,44 @@ uint8_t MiYALAB::STM32F446RE::TIM1_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_8;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_9;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);
 	}
 
 	// CH3 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_10;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_3);
 	}
 
 	// CH4 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_11;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_4);
@@ -228,8 +228,8 @@ uint8_t MiYALAB::STM32F446RE::TIM2_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -244,44 +244,44 @@ uint8_t MiYALAB::STM32F446RE::TIM2_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_5;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_3;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);
 	}
 
 	// CH3 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_10;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_3);
 	}
 
 	// CH4 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_2;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_4);
@@ -330,8 +330,8 @@ uint8_t MiYALAB::STM32F446RE::TIM3_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -346,44 +346,44 @@ uint8_t MiYALAB::STM32F446RE::TIM3_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_4;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_5;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);
 	}
 
 	// CH3 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_0;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_3);
 	}
 
 	// CH4 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_1;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_4);
@@ -432,8 +432,8 @@ uint8_t MiYALAB::STM32F446RE::TIM4_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -448,44 +448,44 @@ uint8_t MiYALAB::STM32F446RE::TIM4_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_6;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_7;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);
 	}
 
 	// CH3 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_8;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_3);
 	}
 
 	// CH4 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_9;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_4);
@@ -534,8 +534,8 @@ uint8_t MiYALAB::STM32F446RE::TIM5_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -550,44 +550,44 @@ uint8_t MiYALAB::STM32F446RE::TIM5_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_0;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_1;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);
 	}
 
 	// CH3 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_2;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_3);
 	}
 
 	// CH4 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4) {
 		__HAL_RCC_GPIOA_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_3;
 		HAL_GPIO_Init(GPIOA, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_4);
@@ -636,8 +636,8 @@ uint8_t MiYALAB::STM32F446RE::TIM8_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -652,44 +652,44 @@ uint8_t MiYALAB::STM32F446RE::TIM8_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOC_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_6;
 		HAL_GPIO_Init(GPIOC, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOC_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_7;
 		HAL_GPIO_Init(GPIOC, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);
 	}
 
 	// CH3 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_3) {
 		__HAL_RCC_GPIOC_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_8;
 		HAL_GPIO_Init(GPIOC, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_3) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_3);
 	}
 
 	// CH4 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_4) {
 		__HAL_RCC_GPIOC_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_9;
 		HAL_GPIO_Init(GPIOC, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_4) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_4);
@@ -736,8 +736,8 @@ uint8_t MiYALAB::STM32F446RE::TIM12_PwmMode::Enable(uint8_t UseChannel)
 	uint8_t Ret = HAL_OK;
 
 	// ハードウェア設定用データ群
-	TIM_OC_InitTypeDef ConfigOC = {0};
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	TIM_OC_InitTypeDef ConfigOC = { 0 };
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// GPIO設定
 	GpioInitStruct.Mode = GPIO_MODE_AF_PP;
@@ -752,22 +752,22 @@ uint8_t MiYALAB::STM32F446RE::TIM12_PwmMode::Enable(uint8_t UseChannel)
 	ConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 
 	// CH1 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_1) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_14;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_1) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_1);
 	}
 
 	// CH2 使用
-	if(UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2){
+	if (UseChannel & MiYALAB::STM32F446RE::TIM::CHANNEL_2) {
 		__HAL_RCC_GPIOB_CLK_ENABLE();
 		GpioInitStruct.Pin = GPIO_PIN_15;
 		HAL_GPIO_Init(GPIOB, &GpioInitStruct);
-		if(HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK){
+		if (HAL_TIM_PWM_ConfigChannel(&hTim, &ConfigOC, TIM_CHANNEL_2) != HAL_OK) {
 			Ret = HAL_ERROR;
 		}
 		HAL_TIM_PWM_Start(&hTim, TIM_CHANNEL_2);

@@ -44,26 +44,26 @@
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
 //------------------------------------------------------------------------------
-namespace MiYALAB{
+namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	// STM32F446RE
 	//--------------------------------------------------------------------------
-	namespace STM32F446RE{
+	namespace STM32F446RE {
 		//----------------------------------------------------------------------
 		// TIM 定数
 		//----------------------------------------------------------------------
-		namespace TIM{
+		namespace TIM {
 			constexpr uint8_t CHANNEL_1 = 0x01;			// TIM チャンネル1
 			constexpr uint8_t CHANNEL_2 = 0x02;			// TIM チャンネル2
 			constexpr uint8_t CHANNEL_3 = 0x04;			// TIM チャンネル3
 			constexpr uint8_t CHANNEL_4 = 0x08;			// TIM チャンネル4
-			constexpr uint8_t CHANNEL_ALL = 0x0f;		// TIM 全チャンネル
+			constexpr uint8_t CHANNEL_ALL = 0x0f;       // TIM 全チャンネル
 		}
 
 		//----------------------------------------------------------------------
 		// TIM PWM Mode スーパークラス
 		//----------------------------------------------------------------------
-		class TIM_PwmMode{
+		class TIM_PwmMode {
 		public:
 			uint8_t Init(uint16_t Divide, uint16_t Period);
 			void PwmOut1(uint16_t Duty);
@@ -77,7 +77,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM1 PWM Mode クラス CH1(PA8), CH2(PA9), CH3(PA10), CH4(PA11)
 		//----------------------------------------------------------------------
-		class TIM1_PwmMode : public TIM_PwmMode{
+		class TIM1_PwmMode: public TIM_PwmMode {
 		public:
 			TIM1_PwmMode();
 			~TIM1_PwmMode();
@@ -87,7 +87,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM2 PWM Mode クラス CH1(PA5), CH2(PB3), CH3(PB10), CH4(PB2)
 		//----------------------------------------------------------------------
-		class TIM2_PwmMode : public TIM_PwmMode{
+		class TIM2_PwmMode: public TIM_PwmMode {
 		public:
 			TIM2_PwmMode();
 			~TIM2_PwmMode();
@@ -97,7 +97,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM3 PWM Mode クラス CH1(PB4), CH2(PB5), CH3(PB0), CH4(PB1)
 		//----------------------------------------------------------------------
-		class TIM3_PwmMode : public TIM_PwmMode{
+		class TIM3_PwmMode: public TIM_PwmMode {
 		public:
 			TIM3_PwmMode();
 			~TIM3_PwmMode();
@@ -107,7 +107,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM4 PWM Mode クラス CH1(PB6), CH2(PB7), CH3(PB8), CH4(PB9)
 		//----------------------------------------------------------------------
-		class TIM4_PwmMode : public TIM_PwmMode{
+		class TIM4_PwmMode: public TIM_PwmMode {
 		public:
 			TIM4_PwmMode();
 			~TIM4_PwmMode();
@@ -117,7 +117,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM5 PWM Mode クラス CH1(PA0), CH2(PA1), CH3(PA2), CH4(PA3)
 		//----------------------------------------------------------------------
-		class TIM5_PwmMode : public TIM_PwmMode{
+		class TIM5_PwmMode: public TIM_PwmMode {
 		public:
 			TIM5_PwmMode();
 			~TIM5_PwmMode();
@@ -127,7 +127,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM8 PWM Mode クラス  CH1(PC6), CH2(PC7), CH3(PC8), CH4(PC9)
 		//----------------------------------------------------------------------
-		class TIM8_PwmMode : public TIM_PwmMode{
+		class TIM8_PwmMode: public TIM_PwmMode {
 		public:
 			TIM8_PwmMode();
 			~TIM8_PwmMode();
@@ -137,13 +137,17 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM12 PWM Mode クラス   CH1(PB14), CH2(PB15)
 		//----------------------------------------------------------------------
-		class TIM12_PwmMode : public TIM_PwmMode{
+		class TIM12_PwmMode: public TIM_PwmMode {
 		public:
 			TIM12_PwmMode();
 			~TIM12_PwmMode();
 			uint8_t Enable(uint8_t UseChannel);
-			void PwmOut3(uint16_t Duty){}			// 使用不可
-			void PwmOut4(uint16_t Duty){}			// 使用不可
+			void PwmOut3(uint16_t Duty)
+			{
+			}			// 使用不可
+			void PwmOut4(uint16_t Duty)
+			{
+			}			// 使用不可
 		};
 	}
 }

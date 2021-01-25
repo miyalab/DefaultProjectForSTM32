@@ -59,7 +59,7 @@ uint8_t MiYALAB::STM32F446RE::USART_UartMode::Init(uint32_t Baudrate, uint32_t L
 	hUart.Init.OverSampling = UART_OVERSAMPLING_16;
 
 	// USART設定適用(UART)
-	if(HAL_UART_Init(&hUart) != HAL_OK){
+	if (HAL_UART_Init(&hUart) != HAL_OK) {
 		return HAL_ERROR;
 	}
 
@@ -93,7 +93,7 @@ MiYALAB::STM32F446RE::USART1_UartMode::~USART1_UartMode()
 uint8_t MiYALAB::STM32F446RE::USART1_UartMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -136,7 +136,7 @@ MiYALAB::STM32F446RE::USART2_UartMode::~USART2_UartMode()
 uint8_t MiYALAB::STM32F446RE::USART2_UartMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -179,7 +179,7 @@ MiYALAB::STM32F446RE::USART3_UartMode::~USART3_UartMode()
 uint8_t MiYALAB::STM32F446RE::USART3_UartMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOC_CLK_ENABLE();
@@ -222,7 +222,7 @@ MiYALAB::STM32F446RE::UART4_UartMode::~UART4_UartMode()
 uint8_t MiYALAB::STM32F446RE::UART4_UartMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -265,7 +265,7 @@ MiYALAB::STM32F446RE::UART5_UartMode::~UART5_UartMode()
 uint8_t MiYALAB::STM32F446RE::UART5_UartMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOC_CLK_ENABLE();
@@ -311,7 +311,7 @@ MiYALAB::STM32F446RE::USART6_UartMode::~USART6_UartMode()
 uint8_t MiYALAB::STM32F446RE::USART6_UartMode::Enable()
 {
 	// ハードウェア設定用データ群
-	GPIO_InitTypeDef GpioInitStruct = {0};
+	GPIO_InitTypeDef GpioInitStruct = { 0 };
 
 	// クロック許可
 	__HAL_RCC_GPIOC_CLK_ENABLE();

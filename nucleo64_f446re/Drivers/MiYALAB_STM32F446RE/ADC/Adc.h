@@ -45,37 +45,37 @@
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
 //------------------------------------------------------------------------------
-namespace MiYALAB{
+namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	// STM32F446RE
 	//--------------------------------------------------------------------------
-	namespace STM32F446RE{
+	namespace STM32F446RE {
 		//----------------------------------------------------------------------
 		// AD 定数
 		//----------------------------------------------------------------------
-		namespace AD{
-			constexpr uint16_t IN_0 = 0x0001;		// ADC IN0端子(PA0)
-			constexpr uint16_t IN_1 = 0x0002;		// ADC IN1端子(PA1)
-			constexpr uint16_t IN_2 = 0x0004;		// ADC IN2端子(PA2)
-			constexpr uint16_t IN_3 = 0x0008;		// ADC IN3端子(PA3)
-			constexpr uint16_t IN_4 = 0x0010;		// ADC IN4端子(PA4)
-			constexpr uint16_t IN_5 = 0x0020;		// ADC IN5端子(PA5)
-			constexpr uint16_t IN_6 = 0x0040;		// ADC IN6端子(PA6)
-			constexpr uint16_t IN_7 = 0x0080;		// ADC IN7端子(PA7)
-			constexpr uint16_t IN_8 = 0x0100;		// ADC IN8端子(PB0)
-			constexpr uint16_t IN_9 = 0x0200;		// ADC IN9端子(PB1)
-			constexpr uint16_t IN_10 = 0x0400;		// ADC IN10端子(PC0)
-			constexpr uint16_t IN_11 = 0x0800;		// ADC IN11端子(PC1)
-			constexpr uint16_t IN_12 = 0x1000;		// ADC IN12端子(PC2)
-			constexpr uint16_t IN_13 = 0x2000;		// ADC IN13端子(PC3)
-			constexpr uint16_t IN_14 = 0x4000;		// ADC IN14端子(PC4)
-			constexpr uint16_t IN_15 = 0x8000;		// ADC IN15端子(PC5)
+		namespace AD {
+			constexpr uint16_t IN_0 = 0x0001;        // ADC IN0端子(PA0)
+			constexpr uint16_t IN_1 = 0x0002;        // ADC IN1端子(PA1)
+			constexpr uint16_t IN_2 = 0x0004;        // ADC IN2端子(PA2)
+			constexpr uint16_t IN_3 = 0x0008;        // ADC IN3端子(PA3)
+			constexpr uint16_t IN_4 = 0x0010;        // ADC IN4端子(PA4)
+			constexpr uint16_t IN_5 = 0x0020;        // ADC IN5端子(PA5)
+			constexpr uint16_t IN_6 = 0x0040;        // ADC IN6端子(PA6)
+			constexpr uint16_t IN_7 = 0x0080;        // ADC IN7端子(PA7)
+			constexpr uint16_t IN_8 = 0x0100;        // ADC IN8端子(PB0)
+			constexpr uint16_t IN_9 = 0x0200;        // ADC IN9端子(PB1)
+			constexpr uint16_t IN_10 = 0x0400;        // ADC IN10端子(PC0)
+			constexpr uint16_t IN_11 = 0x0800;        // ADC IN11端子(PC1)
+			constexpr uint16_t IN_12 = 0x1000;        // ADC IN12端子(PC2)
+			constexpr uint16_t IN_13 = 0x2000;        // ADC IN13端子(PC3)
+			constexpr uint16_t IN_14 = 0x4000;        // ADC IN14端子(PC4)
+			constexpr uint16_t IN_15 = 0x8000;        // ADC IN15端子(PC5)
 		}
 
 		//----------------------------------------------------------------------
 		// ADC_Modeクラス
 		//----------------------------------------------------------------------
-		class ADC_Mode{
+		class ADC_Mode {
 		public:
 			~ADC_Mode();
 			uint8_t Init(uint32_t Resolution);

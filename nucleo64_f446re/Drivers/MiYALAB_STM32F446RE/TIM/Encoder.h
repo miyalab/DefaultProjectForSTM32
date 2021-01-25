@@ -44,23 +44,23 @@
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
 //------------------------------------------------------------------------------
-namespace MiYALAB{
+namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	// STM32F446RE
 	//--------------------------------------------------------------------------
-	namespace STM32F446RE{
+	namespace STM32F446RE {
 		//----------------------------------------------------------------------
 		// TIM 定数
 		//----------------------------------------------------------------------
-		namespace TIM{
-			constexpr uint16_t ENCODER_MAX = 65535;		// TIM エンコーダ最大値
-			constexpr uint16_t ENCODER_CENTER = 32767;	// TIM エンコーダ中央値
+		namespace TIM {
+			constexpr uint16_t ENCODER_MAX = 65535;        // TIM エンコーダ最大値
+			constexpr uint16_t ENCODER_CENTER = 32767;        // TIM エンコーダ中央値
 		}
 
 		//----------------------------------------------------------------------
 		// TIM Encoder Mode スーパークラス
 		//----------------------------------------------------------------------
-		class TIM_EncoderMode{
+		class TIM_EncoderMode {
 		public:
 			uint8_t Init(uint16_t Divide, uint32_t Mode);
 			int16_t Read();
@@ -72,7 +72,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM1 Encoder Mode クラス CH1(PA8), CH2(PA9)
 		//----------------------------------------------------------------------
-		class TIM1_EncoderMode : public TIM_EncoderMode{
+		class TIM1_EncoderMode: public TIM_EncoderMode {
 		public:
 			TIM1_EncoderMode();
 			~TIM1_EncoderMode();
@@ -82,7 +82,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM2 Encoder Mode クラス CH1(PA5), CH2(PB3)
 		//----------------------------------------------------------------------
-		class TIM2_EncoderMode : public TIM_EncoderMode{
+		class TIM2_EncoderMode: public TIM_EncoderMode {
 		public:
 			TIM2_EncoderMode();
 			~TIM2_EncoderMode();
@@ -92,7 +92,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM3 Encoder Mode クラス CH1(PB4), CH2(PB5)
 		//----------------------------------------------------------------------
-		class TIM3_EncoderMode : public TIM_EncoderMode{
+		class TIM3_EncoderMode: public TIM_EncoderMode {
 		public:
 			TIM3_EncoderMode();
 			~TIM3_EncoderMode();
@@ -102,7 +102,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM4 Encoder Mode クラス CH1(PB6), CH2(PB7)
 		//----------------------------------------------------------------------
-		class TIM4_EncoderMode : public TIM_EncoderMode{
+		class TIM4_EncoderMode: public TIM_EncoderMode {
 		public:
 			TIM4_EncoderMode();
 			~TIM4_EncoderMode();
@@ -112,7 +112,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM5 Encoder Mode クラス CH1(PA0), CH2(PA1)
 		//----------------------------------------------------------------------
-		class TIM5_EncoderMode : public TIM_EncoderMode{
+		class TIM5_EncoderMode: public TIM_EncoderMode {
 		public:
 			TIM5_EncoderMode();
 			~TIM5_EncoderMode();
@@ -122,7 +122,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// TIM8 Encoder Mode クラス CH1(PC6), CH2(PC7)
 		//----------------------------------------------------------------------
-		class TIM8_EncoderMode : public TIM_EncoderMode{
+		class TIM8_EncoderMode: public TIM_EncoderMode {
 		public:
 			TIM8_EncoderMode();
 			~TIM8_EncoderMode();
@@ -148,7 +148,7 @@ inline void MiYALAB::STM32F446RE::TIM_EncoderMode::Clear()
 //--------------------------------------------------------------------------------------------
 inline int16_t MiYALAB::STM32F446RE::TIM_EncoderMode::Read()
 {
-	return(hTim.Instance->CNT - MiYALAB::STM32F446RE::TIM::ENCODER_CENTER);
+	return (hTim.Instance->CNT - MiYALAB::STM32F446RE::TIM::ENCODER_CENTER);
 }
 
 #endif /* MIYALAB_STM32F446RE_TIM_ENCODER_H_ */

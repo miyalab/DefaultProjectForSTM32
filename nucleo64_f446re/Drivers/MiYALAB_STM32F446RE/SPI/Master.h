@@ -44,15 +44,15 @@
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
 //------------------------------------------------------------------------------
-namespace MiYALAB{
+namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	// STM32F446RE
 	//--------------------------------------------------------------------------
-	namespace STM32F446RE{
+	namespace STM32F446RE {
 		//----------------------------------------------------------------------
 		// SPI Master Mode スーパークラス
 		//----------------------------------------------------------------------
-		class SPI_MasterMode{
+		class SPI_MasterMode {
 		public:
 			uint8_t Init(uint32_t Prescaler, uint32_t DataSize, uint32_t FirstBit);
 			void TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size);
@@ -63,7 +63,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// SPI1 Master Mode クラス
 		//----------------------------------------------------------------------
-		class SPI1_MasterMode : public SPI_MasterMode{
+		class SPI1_MasterMode: public SPI_MasterMode {
 			SPI1_MasterMode();
 			~SPI1_MasterMode();
 			uint8_t Enable();
@@ -72,7 +72,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// SPI2 Master Mode クラス
 		//----------------------------------------------------------------------
-		class SPI2_MasterMode : public SPI_MasterMode{
+		class SPI2_MasterMode: public SPI_MasterMode {
 			SPI2_MasterMode();
 			~SPI2_MasterMode();
 			uint8_t Enable();
@@ -81,7 +81,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// SPI3 Master Mode クラス　MISO(PC11), MOSI(PC12) ,SCK(PC10)
 		//----------------------------------------------------------------------
-		class SPI3_MasterMode : public SPI_MasterMode{
+		class SPI3_MasterMode: public SPI_MasterMode {
 			SPI3_MasterMode();
 			~SPI3_MasterMode();
 			uint8_t Enable();

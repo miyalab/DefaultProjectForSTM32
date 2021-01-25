@@ -44,15 +44,15 @@
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
 //------------------------------------------------------------------------------
-namespace MiYALAB{
+namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	// STM32F446RE
 	//--------------------------------------------------------------------------
-	namespace STM32F446RE{
+	namespace STM32F446RE {
 		//----------------------------------------------------------------------
 		// SPI Slave Mode スーパークラス
 		//----------------------------------------------------------------------
-		class SPI_SlaveMode{
+		class SPI_SlaveMode {
 		public:
 			uint8_t Init(uint32_t DataSize, uint32_t FirstBit);
 			void TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size);
@@ -63,7 +63,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// SPI1 Slave Mode クラス　MISO(), MOSI() ,SCK(), NSS()
 		//----------------------------------------------------------------------
-		class SPI1_SlaveMode : public SPI_SlaveMode{
+		class SPI1_SlaveMode: public SPI_SlaveMode {
 			SPI1_SlaveMode();
 			~SPI1_SlaveMode();
 			uint8_t Enable();
@@ -72,7 +72,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// SPI2 Slave Mode クラス　MISO(), MOSI() ,SCK(), NSS()
 		//----------------------------------------------------------------------
-		class SPI2_SlaveMode : public SPI_SlaveMode{
+		class SPI2_SlaveMode: public SPI_SlaveMode {
 			SPI2_SlaveMode();
 			~SPI2_SlaveMode();
 			uint8_t Enable();
@@ -81,7 +81,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// SPI3 Slave Mode クラス　MISO(PC11), MOSI(PC12) ,SCK(PC10), NSS(PA15)
 		//----------------------------------------------------------------------
-		class SPI3_SlaveMode : public SPI_SlaveMode{
+		class SPI3_SlaveMode: public SPI_SlaveMode {
 			SPI3_SlaveMode();
 			~SPI3_SlaveMode();
 			uint8_t Enable();

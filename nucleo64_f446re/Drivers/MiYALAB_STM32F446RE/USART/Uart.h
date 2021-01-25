@@ -45,15 +45,15 @@
 //------------------------------------------------------------------------------
 // MiYA LAB OSS
 //------------------------------------------------------------------------------
-namespace MiYALAB{
+namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	// STM32F446RE
 	//--------------------------------------------------------------------------
-	namespace STM32F446RE{
+	namespace STM32F446RE {
 		//----------------------------------------------------------------------
 		// USART UART モード 基底クラス
 		//----------------------------------------------------------------------
-		class USART_UartMode{
+		class USART_UartMode {
 		public:
 			uint8_t Init(uint32_t Baudrate, uint32_t Length, uint32_t StopBits, uint32_t Parity);
 			uint8_t Receive(uint8_t *C, uint16_t TimeOut);
@@ -67,7 +67,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// USART1 UART モード クラス
 		//----------------------------------------------------------------------
-		class USART1_UartMode : public USART_UartMode{
+		class USART1_UartMode: public USART_UartMode {
 		public:
 			USART1_UartMode();
 			~USART1_UartMode();
@@ -77,7 +77,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// USART2 UART モード クラス
 		//----------------------------------------------------------------------
-		class USART2_UartMode : public USART_UartMode{
+		class USART2_UartMode: public USART_UartMode {
 		public:
 			USART2_UartMode();
 			~USART2_UartMode();
@@ -87,7 +87,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// USART3 UART モード クラス
 		//----------------------------------------------------------------------
-		class USART3_UartMode : public USART_UartMode{
+		class USART3_UartMode: public USART_UartMode {
 		public:
 			USART3_UartMode();
 			~USART3_UartMode();
@@ -97,7 +97,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// UART4 UART モード クラス
 		//----------------------------------------------------------------------
-		class UART4_UartMode : public USART_UartMode{
+		class UART4_UartMode: public USART_UartMode {
 		public:
 			UART4_UartMode();
 			~UART4_UartMode();
@@ -107,7 +107,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// UART5 UART モード クラス
 		//----------------------------------------------------------------------
-		class UART5_UartMode : public USART_UartMode{
+		class UART5_UartMode: public USART_UartMode {
 		public:
 			UART5_UartMode();
 			~UART5_UartMode();
@@ -117,7 +117,7 @@ namespace MiYALAB{
 		//----------------------------------------------------------------------
 		// USART6 UART モード クラス
 		//----------------------------------------------------------------------
-		class USART6_UartMode : public USART_UartMode{
+		class USART6_UartMode: public USART_UartMode {
 		public:
 			USART6_UartMode();
 			~USART6_UartMode();
