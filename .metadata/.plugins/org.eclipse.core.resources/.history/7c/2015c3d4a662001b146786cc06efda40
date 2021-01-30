@@ -1,0 +1,17 @@
+/*
+ * Master.h
+ *
+ *  Created on: 2021/01/30
+ *      Author: miyauchi
+ */
+
+#ifndef MIYALAB_STM32F446RE_I2C_MASTER_H_
+#define MIYALAB_STM32F446RE_I2C_MASTER_H_
+
+class Master {
+public:
+	Master();
+	virtual ~Master();
+};
+
+#endif /* MIYALAB_STM32F446RE_I2C_MASTER_H_ */

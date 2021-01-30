@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="2 個のリソースを削除" deleteContents="false" description="2 個のリソースを削除" element1="/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/I2C.cpp" element2="/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/I2C.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1611975359795"/>
+</session>

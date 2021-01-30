@@ -1,0 +1,17 @@
+/*
+ * I2C.h
+ *
+ *  Created on: 2021/01/30
+ *      Author: miyauchi
+ */
+
+#ifndef MIYALAB_STM32F446RE_I2C_I2C_H_
+#define MIYALAB_STM32F446RE_I2C_I2C_H_
+
+class I2C {
+public:
+	I2C();
+	virtual ~I2C();
+};
+
+#endif /* MIYALAB_STM32F446RE_I2C_I2C_H_ */

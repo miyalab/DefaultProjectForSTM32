@@ -1,0 +1,20 @@
+/*
+ * Master.cpp
+ *
+ *  Created on: 2021/01/30
+ *      Author: miyauchi
+ */
+
+#include <I2C/Master.h>
+
+Master::Master()
+{
+	// TODO 自動生成されたコンストラクター・スタブ
+
+}
+
+Master::~Master()
+{
+	// TODO Auto-generated destructor stub
+}
+
