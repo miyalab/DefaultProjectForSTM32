@@ -35,7 +35,7 @@ using namespace MiYALAB::STM32F446RE;
 //--------------------------
 // グローバル変数宣言
 //--------------------------
-MiYALAB::MultiAccess<uint16_t> delayCnt;
+MultiAccess<uint16_t> delayCnt;
 
 //--------------------------
 // ライブラリモジュール

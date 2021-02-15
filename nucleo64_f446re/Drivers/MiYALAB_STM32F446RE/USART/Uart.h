@@ -126,51 +126,62 @@ namespace MiYALAB {
 	}
 }
 
-//--------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // MiYA LAB OSS
-// USART Uart Mode スーパークラス　Receive関数
-// *C : 1文字保存用
-// TimeOut: タイムアウト時間
-//--------------------------------------------------------------------------------------------
-inline uint8_t MiYALAB::STM32F446RE::USART_UartMode::Receive(uint8_t *C, uint16_t TimeOut)
-{
-	return HAL_UART_Receive(&hUart, C, 1, TimeOut);
+//------------------------------------------------------------------------------
+namespace MiYALAB {
+	//--------------------------------------------------------------------------
+	// STM32F446RE
+	//--------------------------------------------------------------------------
+	namespace STM32F446RE {
+		//--------------------------------------------------------------------------------------------
+		// MiYA LAB OSS
+		// USART Uart Mode スーパークラス　Receive関数
+		// *C : 1文字保存用
+		// TimeOut: タイムアウト時間
+		//--------------------------------------------------------------------------------------------
+		inline uint8_t USART_UartMode::Receive(uint8_t *C, uint16_t TimeOut)
+		{
+			return HAL_UART_Receive(&hUart, C, 1, TimeOut);
+		}
+
+		//--------------------------------------------------------------------------------------------
+		// MiYA LAB OSS
+		// USART Uart Mode スーパークラス　Receive関数
+		// *Str : 文字列保存用
+		// Size : Sｔｒのデータサイズ
+		// TimeOut: タイムアウト時間
+		//--------------------------------------------------------------------------------------------
+		inline uint8_t USART_UartMode::Receive(uint8_t *Str, uint16_t Size, uint16_t TimeOut)
+		{
+			return HAL_UART_Receive(&hUart, Str, Size, TimeOut);
+		}
+
+		//--------------------------------------------------------------------------------------------
+		// MiYA LAB OSS
+		// USART Uart Mode スーパークラス　Transmit関数
+		// *C : 送信文字
+		// TimeOut: タイムアウト時間
+		//--------------------------------------------------------------------------------------------
+		inline uint8_t USART_UartMode::Transmit(uint8_t C, uint16_t TimeOut)
+		{
+			return HAL_UART_Transmit(&hUart, &C, 1, TimeOut);
+		}
+
+		//--------------------------------------------------------------------------------------------
+		// MiYA LAB OSS
+		// USART Uart Mode スーパークラス　Transmit関数
+		// *Str : 送信文字列
+		// Size : Sｔｒのデータサイズ
+		// TimeOut: タイムアウト時間
+		//--------------------------------------------------------------------------------------------
+		inline uint8_t USART_UartMode::Transmit(uint8_t *Str, uint16_t Size, uint16_t TimeOut)
+		{
+			return HAL_UART_Transmit(&hUart, Str, Size, TimeOut);
+		}
+	}
 }
 
-//--------------------------------------------------------------------------------------------
-// MiYA LAB OSS
-// USART Uart Mode スーパークラス　Receive関数
-// *Str : 文字列保存用
-// Size : Sｔｒのデータサイズ
-// TimeOut: タイムアウト時間
-//--------------------------------------------------------------------------------------------
-inline uint8_t MiYALAB::STM32F446RE::USART_UartMode::Receive(uint8_t *Str, uint16_t Size, uint16_t TimeOut)
-{
-	return HAL_UART_Receive(&hUart, Str, Size, TimeOut);
-}
-
-//--------------------------------------------------------------------------------------------
-// MiYA LAB OSS
-// USART Uart Mode スーパークラス　Transmit関数
-// *C : 送信文字
-// TimeOut: タイムアウト時間
-//--------------------------------------------------------------------------------------------
-inline uint8_t MiYALAB::STM32F446RE::USART_UartMode::Transmit(uint8_t C, uint16_t TimeOut)
-{
-	return HAL_UART_Transmit(&hUart, &C, 1, TimeOut);
-}
-
-//--------------------------------------------------------------------------------------------
-// MiYA LAB OSS
-// USART Uart Mode スーパークラス　Transmit関数
-// *Str : 送信文字列
-// Size : Sｔｒのデータサイズ
-// TimeOut: タイムアウト時間
-//--------------------------------------------------------------------------------------------
-inline uint8_t MiYALAB::STM32F446RE::USART_UartMode::Transmit(uint8_t *Str, uint16_t Size, uint16_t TimeOut)
-{
-	return HAL_UART_Transmit(&hUart, Str, Size, TimeOut);
-}
 
 #endif /* MIYALAB_STM32F446RE_USART_H_ */
 

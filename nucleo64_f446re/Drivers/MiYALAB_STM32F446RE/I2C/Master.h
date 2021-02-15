@@ -31,7 +31,7 @@
 #define MIYALAB_STM32F446RE_I2C_MASTER_H_
 
 //--------------------------
-// SPI機能使用許可
+// I2C機能使用許可
 //--------------------------
 #define HAL_I2C_MODULE_ENABLED
 
@@ -49,14 +49,61 @@ namespace MiYALAB {
 	// STM32F446RE
 	//--------------------------------------------------------------------------
 	namespace STM32F446RE {
-
+		//----------------------------------------------------------------------
+		// I2C MasterMode スーパークラス
+		//----------------------------------------------------------------------
 		class I2C_MasterMode{
 		public:
-
+			uint8_t Init(uint32_t clock);
+			void Transmit(uint16_t Address, uint8_t *SendData, uint16_t Size);
+			void Receive(uint16_t Address, uint8_t *ReadData, uint16_t Size);
 
 		protected:
-
+			I2C_HandleTypeDef hI2C;
 		};
+
+		//----------------------------------------------------------------------
+		// I2C1 MasterMode スーパークラス
+		//----------------------------------------------------------------------
+		class I2C1_MasterMode : public I2C_MasterMode{
+			I2C1_MasterMode();
+			~I2C1_MasterMode();
+		};
+
+		//----------------------------------------------------------------------
+		// I2C2 MasterMode スーパークラス
+		//----------------------------------------------------------------------
+		class I2C2_MasterMode : public I2C_MasterMode{
+			I2C2_MasterMode();
+			~I2C2_MasterMode();
+		};
+
+		//----------------------------------------------------------------------
+		// I2C3 MasterMode スーパークラス
+		//----------------------------------------------------------------------
+		class I2C3_MasterMode : public I2C_MasterMode{
+			I2C3_MasterMode();
+			~I2C3_MasterMode();
+		};
+
+	}
+}
+
+//------------------------------------------------------------------------------
+// MiYA LAB OSS
+//------------------------------------------------------------------------------
+namespace MiYALAB{
+	//--------------------------------------------------------------------------
+	// STM32F446RE
+	//--------------------------------------------------------------------------
+	namespace STM32F446RE{
+		inline void I2C_MasterMode::Transmit(uint16_t Address, uint8_t *SendData, uint16_t Size){
+			HAL_I2C_Master_Transmit(&hI2C, Address, SendData, Size, 0xffff);
+		}
+
+		inline void I2C_MasterMode::Receive(uint16_t Address, uint8_t *ReadData, uint16_t Size){
+			HAL_I2C_Master_Receive(&hI2C, Address, ReadData, Size, 0xffff);
+		}
 	}
 }
 
@@ -66,5 +113,6 @@ namespace MiYALAB {
 // end of file
 //------------------------------------------------------------------------------
 /*
+ * 2021.02.15 更新
  * 2021.01.30 ファイル作成
  */
