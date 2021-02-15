@@ -66,7 +66,8 @@ int main()
 	Tim7.Init(90, 1000);
 
 	while (1) {
-
+		printf("STM32F446RE\r\n");
+		delay(1000);
 	}
 }
 

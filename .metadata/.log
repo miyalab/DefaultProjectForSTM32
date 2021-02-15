@@ -9323,3 +9323,9 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 java.lang.IllegalArgumentException: timeout value is negative
 	at java.lang.Thread.sleep(Native Method)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-15 16:44:59.892
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-15 16:44:59.897
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
