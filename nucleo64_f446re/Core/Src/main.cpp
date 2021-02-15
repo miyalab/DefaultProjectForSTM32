@@ -35,7 +35,7 @@ using namespace MiYALAB::STM32F446RE;
 //--------------------------
 // グローバル変数宣言
 //--------------------------
-MiYALAB::MultiAccess<uint16_t> delayCnt;
+MultiAccess<uint16_t> delayCnt;
 
 //--------------------------
 // ライブラリモジュール
@@ -66,7 +66,8 @@ int main()
 	Tim7.Init(90, 1000);
 
 	while (1) {
-
+		printf("STM32F446RE\r\n");
+		delay(1000);
 	}
 }
 

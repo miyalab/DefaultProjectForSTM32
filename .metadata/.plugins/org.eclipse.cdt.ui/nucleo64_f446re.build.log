@@ -1,29 +1,6 @@
-10:46:27 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+17:04:51 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
 make -j8 all 
-Building file: ../Drivers/MiYALAB_STM32F446RE/Calculator.cpp
-Building file: ../Core/Src/main.cpp
-Invoking: MCU G++ Compiler
-Invoking: MCU G++ Compiler
-C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/Calculator.d" -MT"Drivers/MiYALAB_STM32F446RE/Calculator.o" -o "Drivers/MiYALAB_STM32F446RE/Calculator.o" "../Drivers/MiYALAB_STM32F446RE/Calculator.cpp"
-C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
-Finished building: ../Drivers/MiYALAB_STM32F446RE/Calculator.cpp
- 
-Finished building: ../Core/Src/main.cpp
- 
-Building target: nucleo64_f446re.elf
-Invoking: MCU G++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
-Finished building target: nucleo64_f446re.elf
- 
-make --no-print-directory post-build
-Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
-arm-none-eabi-size "nucleo64_f446re.elf"
-   text	   data	    bss	    dec	    hex	filename
-   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
- 
+make: Nothing to be done for 'all'.
 
-10:46:29 Build Finished (took 1s.481ms)
+17:04:52 Build Finished (took 481ms)
 

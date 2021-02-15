@@ -181,5 +181,6 @@ org.eclipse.cdt.core.formatter.put_empty_statement_on_new_line=true
 org.eclipse.cdt.core.formatter.tabulation.char=tab
 org.eclipse.cdt.core.formatter.tabulation.size=4
 org.eclipse.cdt.core.formatter.use_tabs_only_for_leading_indentations=false
+org.eclipse.cdt.core.showSourceRootsAtTopLevelOfProject=true
 org.eclipse.cdt.core.taskPriorities=normal,normal,normal
 org.eclipse.cdt.core.taskTags=TODO,FIXME,XXX

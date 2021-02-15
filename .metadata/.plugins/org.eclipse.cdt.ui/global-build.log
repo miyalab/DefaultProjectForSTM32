@@ -2355,3 +2355,1144 @@ arm-none-eabi-size "nucleo64_f446re.elf"
    text	   data	    bss	    dec	    hex	filename
    9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
  
+10:22:42 **** ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:22:44 **** ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
+ 
+ 
+ 
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+ 
+Invoking: MCU GCC Compiler
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+ 
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c"
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c
+ 
+ 
+ 
+Invoking: MCU GCC Compiler
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c
+ 
+ 
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c"
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c
+ 
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+ 
+ 
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c"
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c
+ 
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c"
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c
+Invoking: MCU GCC Compiler
+ 
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c"
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c
+ 
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+ 
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c"
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c
+ 
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c"
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c
+Invoking: MCU GCC Compiler
+ 
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c"
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c"
+Invoking: MCU GCC Compiler
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c"
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c"
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c
+Invoking: MCU GCC Compiler
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c"
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+ 
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/Uart.o" -o "Drivers/MiYALAB_STM32F446RE/USART/Uart.o" "../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c
+ 
+ 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Encoder.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Encoder.cpp"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c
+ 
+ 
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Pwm.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Pwm.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Timer.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+ 
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Building file: ../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp
+ 
+ 
+Invoking: MCU G++ Compiler
+Building file: ../Drivers/MiYALAB_STM32F446RE/SPI/Slave.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/SPI/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/SPI/Master.o" -o "Drivers/MiYALAB_STM32F446RE/SPI/Master.o" "../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp"
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/SPI/Slave.d" -MT"Drivers/MiYALAB_STM32F446RE/SPI/Slave.o" -o "Drivers/MiYALAB_STM32F446RE/SPI/Slave.o" "../Drivers/MiYALAB_STM32F446RE/SPI/Slave.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:72:2: error: expected unqualified-id before '}' token
+  }
+  ^
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+Finished building: ../Drivers/MiYALAB_STM32F446RE/SPI/Slave.cpp
+ 
+ 
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Encoder.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Pwm.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+ 
+10:23:14 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:23:15 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Slave.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/Calculator.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Building file: ../Core/Src/stm32f4xx_it.c
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Building file: ../Core/Src/system_stm32f4xx.c
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Slave.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Slave.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Slave.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Slave.cpp"
+Invoking: MCU GCC Compiler
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/ADC/Adc.d" -MT"Drivers/MiYALAB_STM32F446RE/ADC/Adc.o" -o "Drivers/MiYALAB_STM32F446RE/ADC/Adc.o" "../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/Calculator.d" -MT"Drivers/MiYALAB_STM32F446RE/Calculator.o" -o "Drivers/MiYALAB_STM32F446RE/Calculator.o" "../Drivers/MiYALAB_STM32F446RE/Calculator.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Invoking: MCU GCC Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" -o "Core/Src/stm32f4xx_it.o" "../Core/Src/stm32f4xx_it.c"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" -o "Core/Src/system_stm32f4xx.o" "../Core/Src/system_stm32f4xx.c"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Slave.cpp
+Finished building: ../Drivers/MiYALAB_STM32F446RE/Calculator.cpp
+ 
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Finished building: ../Core/Src/system_stm32f4xx.c
+ 
+Finished building: ../Core/Src/stm32f4xx_it.c
+ 
+Finished building: ../Core/Src/main.cpp
+Finished building: ../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp
+ 
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+10:27:57 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:27:58 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:71:92: error: no 'void MiYALAB::STM32F446RE::I2C1_MasterMode::TransmitReceive(uint8_t*, uint8_t*, uint16_t)' member function declared in class 'MiYALAB::STM32F446RE::I2C1_MasterMode'
+   void I2C1_MasterMode::TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size){
+                                                                                            ^
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+10:28:21 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:28:22 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:71:92: error: no 'void MiYALAB::STM32F446RE::I2C1_MasterMode::TransmitReceive(uint8_t*, uint8_t*, uint16_t)' member function declared in class 'MiYALAB::STM32F446RE::I2C1_MasterMode'
+   void I2C1_MasterMode::TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size){
+                                                                                            ^
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+10:28:28 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:28:29 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:71:92: error: no 'void MiYALAB::STM32F446RE::I2C1_MasterMode::TransmitReceive(uint8_t*, uint8_t*, uint16_t)' member function declared in class 'MiYALAB::STM32F446RE::I2C1_MasterMode'
+   void I2C1_MasterMode::TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size){
+                                                                                            ^
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+10:29:47 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:29:48 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:77:13: error: redefinition of 'void MiYALAB::STM32F446RE::I2C_MasterMode::TransmitReceive(uint8_t*, uint8_t*, uint16_t)'
+ inline void MiYALAB::STM32F446RE::I2C_MasterMode::TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size){
+             ^~~~~~~
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:71:8: note: 'void MiYALAB::STM32F446RE::I2C_MasterMode::TransmitReceive(uint8_t*, uint8_t*, uint16_t)' previously defined here
+   void I2C_MasterMode::TransmitReceive(uint8_t *SendData, uint8_t *ReadData, uint16_t Size){
+        ^~~~~~~~~~~~~~
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+10:29:55 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:29:56 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+10:30:04 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:30:05 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+13:23:48 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:23:49 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:144:3: error: redefinition of 'MiYALAB::STM32F446RE::I2C2_MasterMode::~I2C2_MasterMode()'
+   I2C2_MasterMode::~I2C2_MasterMode()
+   ^~~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:110:3: note: 'MiYALAB::STM32F446RE::I2C2_MasterMode::~I2C2_MasterMode()' previously defined here
+   I2C2_MasterMode::~I2C2_MasterMode()
+   ^~~~~~~~~~~~~~~
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+13:24:00 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:24:01 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+14:23:23 **** ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:23:24 **** ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+16:06:45 **** ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:06:46 **** ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/SPI/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/SPI/Master.o" -o "Drivers/MiYALAB_STM32F446RE/SPI/Master.o" "../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h: In member function 'void MiYALAB::STM32F446RE::I2C_MasterMode::TransmitReceive(uint16_t, uint8_t*, uint16_t)':
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:88:64: error: cannot convert 'I2C_HandleTypeDef' to 'I2C_HandleTypeDef*' for argument '1' to 'HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef*, uint16_t, uint8_t*, uint16_t, uint32_t)'
+    HAL_I2C_Master_Transmit(hI2C, Address, SendData, Size, 0xfff);
+                                                                ^
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../Drivers/MiYALAB_STM32F446RE/SPI/Master.cpp
+ 
+16:06:49 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:06:50 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+16:20:05 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:20:06 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/Calculator.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/Calculator.d" -MT"Drivers/MiYALAB_STM32F446RE/Calculator.o" -o "Drivers/MiYALAB_STM32F446RE/Calculator.o" "../Drivers/MiYALAB_STM32F446RE/Calculator.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+In file included from ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp:30:0:
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:104:15: error: redefinition of 'void MiYALAB::STM32F446RE::I2C_MasterMode::Transmit(uint16_t, uint8_t*, uint16_t)'
+   inline void I2C_MasterMode::Transmit(uint16_t Address, uint8_t *ReadData, uint16_t Size){
+               ^~~~~~~~~~~~~~
+C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE/I2C/Master.h:100:15: note: 'void MiYALAB::STM32F446RE::I2C_MasterMode::Transmit(uint16_t, uint8_t*, uint16_t)' previously defined here
+   inline void I2C_MasterMode::Transmit(uint16_t Address, uint8_t *SendData, uint16_t Size){
+Finished building: ../Drivers/MiYALAB_STM32F446RE/Calculator.cpp
+               ^~~~~~~~~~~~~~
+ 
+Drivers/MiYALAB_STM32F446RE/I2C/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/I2C/Master.o' failed
+make: *** [Drivers/MiYALAB_STM32F446RE/I2C/Master.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../Core/Src/main.cpp
+ 
+16:20:40 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:20:41 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+16:22:46 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:22:46 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/Uart.o" -o "Drivers/MiYALAB_STM32F446RE/USART/Uart.o" "../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+16:26:34 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:26:35 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/Uart.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/Uart.o" -o "Drivers/MiYALAB_STM32F446RE/USART/Uart.o" "../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Core/Src/main.cpp
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/Uart.cpp
+ 
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9808	    128	   1788	  11724	   2dcc	nucleo64_f446re.elf
+ 
+16:30:08 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:30:09 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Timer.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9124	    128	   1788	  11040	   2b20	nucleo64_f446re.elf
+ 
+16:34:32 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:34:33 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Pwm.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Pwm.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Pwm.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Pwm.cpp"
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Timer.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Timer.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Timer.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Pwm.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9124	    128	   1788	  11040	   2b20	nucleo64_f446re.elf
+ 
+16:39:39 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:39:40 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/TIM/Encoder.cpp
+Building file: ../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/TIM/Encoder.d" -MT"Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o" -o "Drivers/MiYALAB_STM32F446RE/TIM/Encoder.o" "../Drivers/MiYALAB_STM32F446RE/TIM/Encoder.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/ADC/Adc.d" -MT"Drivers/MiYALAB_STM32F446RE/ADC/Adc.o" -o "Drivers/MiYALAB_STM32F446RE/ADC/Adc.o" "../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/TIM/Encoder.cpp
+ 
+Finished building: ../Drivers/MiYALAB_STM32F446RE/ADC/Adc.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9124	    128	   1788	  11040	   2b20	nucleo64_f446re.elf
+ 
+16:41:07 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:41:08 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:42:40 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:42:41 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9124	    128	   1788	  11040	   2b20	nucleo64_f446re.elf
+ 
+16:45:02 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Core/Src/main.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.cpp"
+Finished building: ../Core/Src/main.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9948	    128	   1788	  11864	   2e58	nucleo64_f446re.elf
+ 
+16:45:43 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:46:59 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:47:00 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp: In function 'void __io_putchar(uint8_t)':
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:90:2: error: 'USART_PutChar' was not declared in this scope
+  USART_PutChar(ch);
+  ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:90:2: note: suggested alternative:
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:61:15: note:   'MiYALAB::STM32F446RE::USART_PutChar'
+   __weak void USART_PutChar(uint8_t C)
+               ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp: In function 'int __io_getchar()':
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:103:32: error: 'USART_GetChar' was not declared in this scope
+   Status = (HAL_StatusTypeDef) USART_GetChar(&Data);
+                                ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:103:32: note: suggested alternative:
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:69:18: note:   'MiYALAB::STM32F446RE::USART_GetChar'
+   __weak uint8_t USART_GetChar(uint8_t *C)
+                  ^~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:107:2: error: 'USART_EchoBack' was not declared in this scope
+  USART_EchoBack(Data);
+  ^~~~~~~~~~~~~~
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:107:2: note: suggested alternative:
+../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp:77:15: note:   'MiYALAB::STM32F446RE::USART_EchoBack'
+   __weak void USART_EchoBack(uint8_t C)
+               ^~~~~~~~~~~~~~
+Drivers/MiYALAB_STM32F446RE/USART/subdir.mk:21: recipe for target 'Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o' failed
+make: *** [Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o] Error 1
+16:47:35 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:47:36 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10632	    128	   1788	  12548	   3104	nucleo64_f446re.elf
+ 
+16:47:39 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:47:50 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:47:57 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:48:07 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:48:55 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:48:56 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10632	    128	   1788	  12548	   3104	nucleo64_f446re.elf
+ 
+16:49:08 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:49:09 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.d" -MT"Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" -o "Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.o" "../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/USART/UsartCommon.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10632	    128	   1788	  12548	   3104	nucleo64_f446re.elf
+ 
+16:49:28 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:04:37 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:04:38 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+Building file: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+Invoking: MCU G++ Compiler
+C:\Users\miyauchi\Documents\GitHub\DefaultProjectForSTM32\nucleo64_f446re\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Core/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/MiYALAB_STM32F446RE" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/miyauchi/Documents/GitHub/DefaultProjectForSTM32/nucleo64_f446re/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Drivers/MiYALAB_STM32F446RE/I2C/Master.d" -MT"Drivers/MiYALAB_STM32F446RE/I2C/Master.o" -o "Drivers/MiYALAB_STM32F446RE/I2C/Master.o" "../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp"
+Finished building: ../Drivers/MiYALAB_STM32F446RE/I2C/Master.cpp
+ 
+Building target: nucleo64_f446re.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "nucleo64_f446re.elf" @"objects.list"   -lm
+Finished building target: nucleo64_f446re.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "nucleo64_f446re.elf" "nucleo64_f446re.hex"
+arm-none-eabi-size "nucleo64_f446re.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10632	    128	   1788	  12548	   3104	nucleo64_f446re.elf
+ 
+17:04:50 **** インクリメンタル・ビルド of configuration Debug for project nucleo32_f303k8 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:04:51 **** インクリメンタル・ビルド of configuration Debug for project nucleo64_f446re ****
+make -j8 all 
+make: Nothing to be done for 'all'.
