@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="I2CMode" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="MasterMode"/>
 			<item value="MiYALAB::STM32F446RE::"/>
 			<item value="MiYALAB::STM32F446RE"/>
 			<item value="&#x09;;"/>
@@ -16,6 +17,8 @@
 			<item value="inline "/>
 		</list>
 		<list key="replacehistory">
+			<item value="I2CMode"/>
+			<item value="I2C"/>
 			<item value=""/>
 		</list>
 	</section>

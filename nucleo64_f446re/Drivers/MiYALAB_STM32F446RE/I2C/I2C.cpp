@@ -63,12 +63,10 @@ namespace MiYALAB {
 
 		//----------------------------------------------------------------------
 		// MiYALAB OSS
-		// I2C1 I2CMode スーパークラス
-		// clock : I2C通信速度[Hz]
-		// return : 0(正常)
-		//			other wise(エラー)
+		// I2C1 I2CMode コンストラクタ
+		// I2C1_CLK 開始
 		//----------------------------------------------------------------------
-		I2C1_MasterMode::I2C1_MasterMode()
+		I2C1_I2CMode::I2C1_I2CMode()
 		{
 			GPIO_InitTypeDef GpioInitStruct = { 0 };
 
@@ -77,7 +75,7 @@ namespace MiYALAB {
 			__HAL_RCC_I2C1_CLK_ENABLE();
 
 			// GPIO設定
-			GpioInitStruct.Pin = GPIO_PIN_6 | GPIO_PIN_7;
+			GpioInitStruct.Pin = GPIO_PIN_8 | GPIO_PIN_9;
 			GpioInitStruct.Mode = GPIO_MODE_AF_OD;
 			GpioInitStruct.Pull = GPIO_PULLUP;
 			GpioInitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -87,14 +85,24 @@ namespace MiYALAB {
 			hI2C.Instance = I2C1;
 		}
 
-		I2C1_MasterMode::~I2C1_MasterMode()
+		//----------------------------------------------------------------------
+		// MiYALAB OSS
+		// I2C1 I2CMode デストラクタ
+		// I2C1_CLK 停止
+		//----------------------------------------------------------------------
+		I2C1_I2CMode::~I2C1_I2CMode()
 		{
 			__HAL_RCC_I2C1_CLK_DISABLE();
-		    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_6);
-		    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_7);
+		    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_8);
+		    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_9);
 		}
 
-		I2C2_MasterMode::I2C2_MasterMode()
+		//----------------------------------------------------------------------
+		// MiYALAB OSS
+		// I2C2 I2CMode コンストラクタ
+		// I2C2_CLK 開始
+		//----------------------------------------------------------------------
+		I2C2_I2CMode::I2C2_I2CMode()
 		{
 			GPIO_InitTypeDef GpioInitStruct = { 0 };
 
@@ -121,14 +129,24 @@ namespace MiYALAB {
 			hI2C.Instance = I2C2;
 		}
 
-		I2C2_MasterMode::~I2C2_MasterMode()
+		//----------------------------------------------------------------------
+		// MiYALAB OSS
+		// I2C1 I2CMode デストラクタ
+		// I2C1_CLK 停止
+		//----------------------------------------------------------------------
+		I2C2_I2CMode::~I2C2_I2CMode()
 		{
 			__HAL_RCC_I2C2_CLK_DISABLE();
 		    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_10);
 		    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_12);
 		}
 
-		I2C3_MasterMode::I2C3_MasterMode()
+		//----------------------------------------------------------------------
+		// MiYALAB OSS
+		// I2C3 I2CMode コンストラクタ
+		// I2C3_CLK 開始
+		//----------------------------------------------------------------------
+		I2C3_I2CMode::I2C3_I2CMode()
 		{
 			GPIO_InitTypeDef GpioInitStruct = { 0 };
 
@@ -155,7 +173,12 @@ namespace MiYALAB {
 			hI2C.Instance = I2C3;
 		}
 
-		I2C3_MasterMode::~I2C3_MasterMode()
+		//----------------------------------------------------------------------
+		// MiYALAB OSS
+		// I2C1 I2CMode デストラクタ
+		// I2C1_CLK 停止
+		//----------------------------------------------------------------------
+		I2C3_I2CMode::~I2C3_I2CMode()
 		{
 			__HAL_RCC_I2C3_CLK_DISABLE();
 		    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_9);

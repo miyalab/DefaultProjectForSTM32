@@ -50,7 +50,7 @@ namespace MiYALAB {
 	//--------------------------------------------------------------------------
 	namespace STM32F446RE {
 		//----------------------------------------------------------------------
-		// I2C MasterMode スーパークラス
+		// I2C I2CMode スーパークラス
 		//----------------------------------------------------------------------
 		class I2C_I2CMode{
 		public:
@@ -65,27 +65,27 @@ namespace MiYALAB {
 		};
 
 		//----------------------------------------------------------------------
-		// I2C1 MasterMode スーパークラス
+		// I2C1 I2CMode クラス　SCL(PB8), SDA(PB9)
 		//----------------------------------------------------------------------
-		class I2C1_MasterMode : public I2C_I2CMode{
-			I2C1_MasterMode();
-			~I2C1_MasterMode();
+		class I2C1_I2CMode : public I2C_I2CMode{
+			I2C1_I2CMode();
+			~I2C1_I2CMode();
 		};
 
 		//----------------------------------------------------------------------
-		// I2C2 MasterMode スーパークラス
+		// I2C2 I2CMode クラス　SCL(PB10), SDA(PC12)
 		//----------------------------------------------------------------------
-		class I2C2_MasterMode : public I2C_I2CMode{
-			I2C2_MasterMode();
-			~I2C2_MasterMode();
+		class I2C2_I2CMode : public I2C_I2CMode{
+			I2C2_I2CMode();
+			~I2C2_I2CMode();
 		};
 
 		//----------------------------------------------------------------------
-		// I2C3 MasterMode スーパークラス
+		// I2C3 I2CMode クラス　SCL(PA8), SDA(PC9)
 		//----------------------------------------------------------------------
-		class I2C3_MasterMode : public I2C_I2CMode{
-			I2C3_MasterMode();
-			~I2C3_MasterMode();
+		class I2C3_I2CMode : public I2C_I2CMode{
+			I2C3_I2CMode();
+			~I2C3_I2CMode();
 		};
 	}
 }
